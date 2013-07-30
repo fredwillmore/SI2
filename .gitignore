@@ -13,6 +13,6 @@
 *.a
 
 # build files
-Output
+Output/*
 
-Intermediate-llvm
+Intermediate-llvm/*
