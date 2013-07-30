@@ -1,0 +1,45 @@
+<materials version="1.0" namespace="propellerhead">
+
+	
+	
+	
+
+	<phong id="Knob_16_part_01" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file="Knob_04_nm.tga"/>
+		<diffuse rgb="210 210 210"/>
+		<diffuseMap file="Knob_04_df.tga"/>
+		<specular rgb="55 55 55"/> 
+		<specularMap file=""/>
+		<shininess value="225"/>
+		<shininessMap file="Knob_04_sp.tga"/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+
+	<anisotropic id="Knob_16_part_02" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file="Tangent_nm.tga"/>
+		<tangentMap file="Tangent_Circular.tga"/>
+		<diffuse rgb="160 160 160"/>
+		<diffuseMap file=""/>
+		<specular rgb="220 220 220"/> 
+		<specularMap file=""/>
+		<shininess value="250"/>
+		<shininessMap file=""/>
+		<lobeShape xy="1000 25"/>
+	</anisotropic>
+	
+</materials>

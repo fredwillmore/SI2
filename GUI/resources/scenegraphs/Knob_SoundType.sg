@@ -1,0 +1,29 @@
+<scenegraph version="1.0">
+	<animationNode id="anim">
+		<frames count="5"/>
+		<rotationAngleKeys target="rotation">
+			<key frame="1" value="120"/>
+			<key frame="3" value="0"/>
+			<key frame="5" value="-120"/>
+		</rotationAngleKeys>
+		<rotationNode id="rotation">
+			<axis direction="0 0 1"/>
+			<angle degrees="0"/>
+			<pivot point="0 0 0"/>
+			<materialNode id="Knob_16_part_01_mat">
+				<material name="propellerhead.Knob_16_part_01"/>
+				<geometryNode id="Knob_16_part_01_geom">
+					<shadows caster="true" receiver="true"/>
+					<collada file="Knob_16.dae" geometry="Knob_16_part_01"/>
+				</geometryNode>
+			</materialNode>
+			<materialNode id="Knob_16_part_02_mat">
+				<material name="propellerhead.Knob_16_part_02"/>
+				<geometryNode id="Knob_16_part_02_geom">
+					<shadows caster="true" receiver="true"/>
+					<collada file="Knob_16.dae" geometry="Knob_16_part_02"/>
+				</geometryNode>
+			</materialNode>
+		</rotationNode>
+	</animationNode>
+</scenegraph>

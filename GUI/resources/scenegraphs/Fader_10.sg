@@ -1,0 +1,20 @@
+<scenegraph version="1.0">
+	<animationNode id="Fader_10">
+		<frames count="60"/>
+		<translationKeys target="Fader_10_translation">
+			<key frame="1" value="-30 0 0"/>
+			<key frame="60" value="30 0 0"/>
+		</translationKeys>
+		<translationNode id="Fader_10_translation">
+			<translation distance="0 0 0"/>
+			<materialNode id="Fader_10_mat">
+				<material name="propellerhead.Fader_10"/>
+				<geometryNode id="Fader_10_geom">
+					<shadows caster="true" receiver="true"/>
+					<collada file="Fader_10.dae" geometry="Fader_10"/>
+				</geometryNode>
+			</materialNode>		
+		</translationNode>
+	</animationNode>
+</scenegraph>
+

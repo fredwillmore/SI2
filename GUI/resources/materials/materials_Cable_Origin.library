@@ -1,0 +1,26 @@
+<materials version="1.0" namespace="propellerhead">
+
+	<phong id="Cable_Origin" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file="Cable_Origin_alpha.tga"/>
+		<reflectionMask file="Cable_Origin_ref.tga"/>
+		<normalMap file="Cable_Origin_nm.tga"/>
+		<diffuse rgb="255 255 255"/>
+		<diffuseMap file="Cable_Origin_df.tga"/>
+		<specular rgb="60 60 60"/> 
+		<specularMap file=""/>
+		<shininess value="85"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+		
+</materials>

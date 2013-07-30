@@ -1,0 +1,31 @@
+<materials version="1.0" namespace="propellerhead">
+	
+	
+
+
+	<phong id="Button_10" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file=""/>
+		<diffuse rgb="255 255 255"/>
+		<diffuseMap file="Button_09_df.tga"/>
+		<specular rgb="50 50 50"/> 
+		<specularMap file=""/>
+		<shininess value="20"/>
+		<shininessMap file="Button_09_sp.tga"/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+	
+	
+	
+</materials>

@@ -1,0 +1,30 @@
+<scenegraph version="1.0">
+	<translationNode id="Panel_Front_2U">
+		<translation distance="0 0 0"/>
+		<materialNode id="Panel_Front_2U">
+			<material name="propellerhead.Panel_Front_Brushed_Metal_01_2U"/>
+			<geometryNode id="Panel_Front_2U">
+				<shadows caster="true" receiver="true"/>
+				<collada file="Panel_Front_2U.dae" geometry="Panel_Front_2U"/>
+			</geometryNode>
+		</materialNode>
+		
+	</translationNode>
+	
+
+</scenegraph>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

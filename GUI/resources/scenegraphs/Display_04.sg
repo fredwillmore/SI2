@@ -1,0 +1,30 @@
+<scenegraph version="1.0">
+	
+		
+		<materialNode id="Display_04_part_02_mat">
+				<material name="propellerhead.Display_04_part_02"/>
+				<geometryNode id="Display_04_part_02_geom">
+					<shadows caster="false" receiver="false"/>
+					<collada file="Display_04.dae" geometry="Display_04_part_02"/>
+				</geometryNode>
+			<materialNode id="Display_04_part_01_mat">
+				<material name="propellerhead.Display_04_part_01"/>
+		
+		    <decalNode id="Display_04_part_01_decal">
+			    <drawOrder order="afterOpaque"/>
+			    <layer value="0"/>
+			    <geometryNode id="Display_04_part_01_geom">
+				   <shadows caster="true" receiver="true"/>
+				   <collada file="Display_04.dae" geometry="Display_04_part_01"/>
+			    </geometryNode>
+		    </decalNode>
+			</materialNode>	
+			
+
+			
+		</materialNode>
+			
+
+		
+	
+</scenegraph>

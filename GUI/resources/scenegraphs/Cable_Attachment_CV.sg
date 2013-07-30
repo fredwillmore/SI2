@@ -1,0 +1,16 @@
+<scenegraph version="1.0">
+	<translationNode id="cablecv">
+	<translation distance="0 0 0"/>
+		<materialNode id="Cable_Attachment_CV_mat">
+				<material name="propellerhead.Cable_Attachment_CV"/>
+				<geometryNode id="Cable_Attachment_CV_geom">
+					<shadows caster="true" receiver="true"/>
+					<collada file="Cable_Attachment_CV.dae" geometry="Cable_Attachment_CV"/>
+				</geometryNode>
+			</materialNode>
+
+			
+
+		
+	</translationNode>
+</scenegraph>

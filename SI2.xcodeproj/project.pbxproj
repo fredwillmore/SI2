@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		101C9AC914C86CEB000DCA37 /* DummyStaticInit.c in Sources */ = {isa = PBXBuildFile; fileRef = 101C9AB714C86C4A000DCA37 /* DummyStaticInit.c */; };
+		101C9ACA14C86CEB000DCA37 /* JukeboxABI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 101C9AB414C86C4A000DCA37 /* JukeboxABI.cpp */; };
+		9172878015B01CAC005FC0EB /* SI2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9172877F15B01CAC005FC0EB /* SI2.cpp */; };
+		9172879015B043FE005FC0EB /* SampleSound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9172878D15B043FE005FC0EB /* SampleSound.cpp */; };
+		9172879115B043FE005FC0EB /* Voice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9172878E15B043FE005FC0EB /* Voice.cpp */; };
+		9172879215B043FE005FC0EB /* VoicePool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9172878F15B043FE005FC0EB /* VoicePool.cpp */; };
+		F74F0105159CC231000245A5 /* JukeboxExports.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F74F00FE159CC231000245A5 /* JukeboxExports.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6553E451791CD1D00E60C3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6553E411791CD1C00E60C3A /* REtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6553E351791CD1C00E60C3A;
+			remoteInfo = REtest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		101C9A5D14C86C4A000DCA37 /* Jukebox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jukebox.h; sourceTree = "<group>"; };
+		101C9A5E14C86C4A000DCA37 /* JukeboxTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JukeboxTypes.h; sourceTree = "<group>"; };
+		101C9AAE14C86C4A000DCA37 /* General settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "General settings.xcconfig"; sourceTree = "<group>"; };
+		101C9AB014C86C4A000DCA37 /* RackExtensionExports.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = RackExtensionExports.exp; sourceTree = "<group>"; };
+		101C9AB414C86C4A000DCA37 /* JukeboxABI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JukeboxABI.cpp; sourceTree = "<group>"; };
+		101C9AB514C86C4A000DCA37 /* JukeboxABI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JukeboxABI.h; sourceTree = "<group>"; };
+		101C9AB714C86C4A000DCA37 /* DummyStaticInit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DummyStaticInit.c; sourceTree = "<group>"; };
+		101C9AC214C86C8C000DCA37 /* RELibrary.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = RELibrary.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B680A114D1A92F0019366B /* Local Xcode debugging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Local Xcode debugging.xcconfig"; sourceTree = "<group>"; };
+		10B680A214D1A92F0019366B /* Local Xcode deployment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Local Xcode deployment.xcconfig"; sourceTree = "<group>"; };
+		10B680A314D1A92F0019366B /* Local Xcode general.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Local Xcode general.xcconfig"; sourceTree = "<group>"; };
+		10B680A414D1A92F0019366B /* Local Xcode testing.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Local Xcode testing.xcconfig"; sourceTree = "<group>"; };
+		10CA294A15ADB20600EFBA75 /* texts.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = texts.lua; sourceTree = "<group>"; };
+		10CA294C15ADB20600EFBA75 /* Sample_192000.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sample_192000.wav; sourceTree = "<group>"; };
+		10CA294D15ADB20600EFBA75 /* Sample_22050.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sample_22050.wav; sourceTree = "<group>"; };
+		10CA294E15ADB20600EFBA75 /* Sample_44100.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sample_44100.wav; sourceTree = "<group>"; };
+		10CA294F15ADB20600EFBA75 /* Sample_48000.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sample_48000.wav; sourceTree = "<group>"; };
+		10CA295015ADB20600EFBA75 /* Sample_88200.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sample_88200.wav; sourceTree = "<group>"; };
+		10CA295115ADB20600EFBA75 /* Sample_96000.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sample_96000.wav; sourceTree = "<group>"; };
+		10CA295315ADB20600EFBA75 /* Plain Sinus.repatch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Plain Sinus.repatch"; sourceTree = "<group>"; };
+		10CA295415ADB20600EFBA75 /* Triangle with sample.repatch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Triangle with sample.repatch"; sourceTree = "<group>"; };
+		10CA295615ADB24B00EFBA75 /* DeviceIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeviceIcon.png; sourceTree = "<group>"; };
+		10CA295715ADB24B00EFBA75 /* DeviceNavigator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeviceNavigator.png; sourceTree = "<group>"; };
+		10CA295815ADB24B00EFBA75 /* DeviceNavigatorFolded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeviceNavigatorFolded.png; sourceTree = "<group>"; };
+		10CA295915ADB24B00EFBA75 /* DevicePaletteImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DevicePaletteImage.png; sourceTree = "<group>"; };
+		10CA295A15ADB24B00EFBA75 /* DeviceTrackListThumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeviceTrackListThumbnail.png; sourceTree = "<group>"; };
+		10CA295B15ADB24B00EFBA75 /* gui.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gui.lua; sourceTree = "<group>"; };
+		10CA295C15ADB24B00EFBA75 /* Reason_GUI_back_folded_root_Panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_back_folded_root_Panel.png; sourceTree = "<group>"; };
+		10CA295D15ADB24B00EFBA75 /* Reason_GUI_back_root_Panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_back_root_Panel.png; sourceTree = "<group>"; };
+		10CA295E15ADB24B00EFBA75 /* Reason_GUI_front_folded_root_Fader_Bypass_Fader_Bypass_Fader_Bypass_Handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_folded_root_Fader_Bypass_Fader_Bypass_Fader_Bypass_Handle.png; sourceTree = "<group>"; };
+		10CA295F15ADB24B00EFBA75 /* Reason_GUI_front_folded_root_Panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_folded_root_Panel.png; sourceTree = "<group>"; };
+		10CA296015ADB24B00EFBA75 /* Reason_GUI_front_root_Button_DelaySync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Button_DelaySync.png; sourceTree = "<group>"; };
+		10CA296115ADB24B00EFBA75 /* Reason_GUI_front_root_Button_SamplePlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Button_SamplePlay.png; sourceTree = "<group>"; };
+		10CA296215ADB24B00EFBA75 /* Reason_GUI_front_root_Display_Waveform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Display_Waveform.png; sourceTree = "<group>"; };
+		10CA296315ADB24B00EFBA75 /* Reason_GUI_front_root_Display_Waveform_UpDown_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Display_Waveform_UpDown_Button.png; sourceTree = "<group>"; };
+		10CA296415ADB24B00EFBA75 /* Reason_GUI_front_root_Fader_Bypass_Fader_Bypass_Fader_Bypass_Handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Fader_Bypass_Fader_Bypass_Fader_Bypass_Handle.png; sourceTree = "<group>"; };
+		10CA296515ADB24B00EFBA75 /* Reason_GUI_front_root_Fader_Volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Fader_Volume.png; sourceTree = "<group>"; };
+		10CA296615ADB24B00EFBA75 /* Reason_GUI_front_root_Fader_Volume_Fader_Volume_Handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Fader_Volume_Fader_Volume_Handle.png; sourceTree = "<group>"; };
+		10CA296715ADB24B00EFBA75 /* Reason_GUI_front_root_Knob_Delay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Knob_Delay.png; sourceTree = "<group>"; };
+		10CA296815ADB24B00EFBA75 /* Reason_GUI_front_root_Knob_Frequency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Knob_Frequency.png; sourceTree = "<group>"; };
+		10CA296915ADB24B00EFBA75 /* Reason_GUI_front_root_Knob_Load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Knob_Load.png; sourceTree = "<group>"; };
+		10CA296A15ADB24B00EFBA75 /* Reason_GUI_front_root_Knob_Volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Knob_Volume.png; sourceTree = "<group>"; };
+		10CA296B15ADB24B00EFBA75 /* Reason_GUI_front_root_Lamp_NoteOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Lamp_NoteOn.png; sourceTree = "<group>"; };
+		10CA296C15ADB24B00EFBA75 /* Reason_GUI_front_root_Lamp_Running.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Lamp_Running.png; sourceTree = "<group>"; };
+		10CA296D15ADB24B00EFBA75 /* Reason_GUI_front_root_Lamp_Silent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Lamp_Silent.png; sourceTree = "<group>"; };
+		10CA296E15ADB24B00EFBA75 /* Reason_GUI_front_root_Lamp_WaitingForSilentTimeout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Lamp_WaitingForSilentTimeout.png; sourceTree = "<group>"; };
+		10CA296F15ADB24B00EFBA75 /* Reason_GUI_front_root_Panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Panel.png; sourceTree = "<group>"; };
+		10CA297015ADB24B00EFBA75 /* Reason_GUI_front_root_Wheel_Mod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Wheel_Mod.png; sourceTree = "<group>"; };
+		10CA297115ADB24B00EFBA75 /* Reason_GUI_front_root_Wheel_Pitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_GUI_front_root_Wheel_Pitch.png; sourceTree = "<group>"; };
+		10CA297415ADB24B00EFBA75 /* Button_09.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Button_09.dae; sourceTree = "<group>"; };
+		10CA297515ADB24B00EFBA75 /* Button_10.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Button_10.dae; sourceTree = "<group>"; };
+		10CA297615ADB24B00EFBA75 /* Button_12.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Button_12.dae; sourceTree = "<group>"; };
+		10CA297715ADB24B00EFBA75 /* Button_21.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Button_21.dae; sourceTree = "<group>"; };
+		10CA297815ADB24B00EFBA75 /* Button_27.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Button_27.dae; sourceTree = "<group>"; };
+		10CA297915ADB24B00EFBA75 /* Cable_Attachment_Audio.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Cable_Attachment_Audio.dae; sourceTree = "<group>"; };
+		10CA297A15ADB24B00EFBA75 /* Cable_Attachment_CV.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Cable_Attachment_CV.dae; sourceTree = "<group>"; };
+		10CA297B15ADB24B00EFBA75 /* Cable_Origin.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Cable_Origin.dae; sourceTree = "<group>"; };
+		10CA297C15ADB24B00EFBA75 /* Display_04.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Display_04.dae; sourceTree = "<group>"; };
+		10CA297D15ADB24B00EFBA75 /* Display_07.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Display_07.dae; sourceTree = "<group>"; };
+		10CA297E15ADB24B00EFBA75 /* Display_09.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Display_09.dae; sourceTree = "<group>"; };
+		10CA297F15ADB24B00EFBA75 /* Fader_01.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Fader_01.dae; sourceTree = "<group>"; };
+		10CA298015ADB24B00EFBA75 /* Fader_10.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Fader_10.dae; sourceTree = "<group>"; };
+		10CA298115ADB24B00EFBA75 /* Hole_02.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Hole_02.dae; sourceTree = "<group>"; };
+		10CA298215ADB24B00EFBA75 /* Knob_16.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Knob_16.dae; sourceTree = "<group>"; };
+		10CA298315ADB24B00EFBA75 /* Lamp_05.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Lamp_05.dae; sourceTree = "<group>"; };
+		10CA298415ADB24B00EFBA75 /* Mod_Wheel_01.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Mod_Wheel_01.dae; sourceTree = "<group>"; };
+		10CA298515ADB24B00EFBA75 /* Panel_Back_2U.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Panel_Back_2U.dae; sourceTree = "<group>"; };
+		10CA298615ADB24B00EFBA75 /* Panel_Back_Folded.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Panel_Back_Folded.dae; sourceTree = "<group>"; };
+		10CA298715ADB24B00EFBA75 /* Panel_Front_2U.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Panel_Front_2U.dae; sourceTree = "<group>"; };
+		10CA298815ADB24B00EFBA75 /* Panel_Front_Folded.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Panel_Front_Folded.dae; sourceTree = "<group>"; };
+		10CA298915ADB24B00EFBA75 /* Patch_Browse_Group_Frame.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Patch_Browse_Group_Frame.dae; sourceTree = "<group>"; };
+		10CA298A15ADB24B00EFBA75 /* Placeholder.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Placeholder.dae; sourceTree = "<group>"; };
+		10CA298B15ADB24B00EFBA75 /* Screw_06.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Screw_06.dae; sourceTree = "<group>"; };
+		10CA298C15ADB24C00EFBA75 /* Tape_Horizontal.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tape_Horizontal.dae; sourceTree = "<group>"; };
+		10CA298D15ADB24C00EFBA75 /* Tape_Vertical.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tape_Vertical.dae; sourceTree = "<group>"; };
+		10CA298F15ADB24C00EFBA75 /* materials_Button_09.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Button_09.library; sourceTree = "<group>"; };
+		10CA299015ADB24C00EFBA75 /* materials_Button_10.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Button_10.library; sourceTree = "<group>"; };
+		10CA299115ADB24C00EFBA75 /* materials_Button_12.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Button_12.library; sourceTree = "<group>"; };
+		10CA299215ADB24C00EFBA75 /* materials_Button_21.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Button_21.library; sourceTree = "<group>"; };
+		10CA299315ADB24C00EFBA75 /* materials_Button_27.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Button_27.library; sourceTree = "<group>"; };
+		10CA299415ADB24C00EFBA75 /* materials_Cable_Attachment_Audio.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Cable_Attachment_Audio.library; sourceTree = "<group>"; };
+		10CA299515ADB24C00EFBA75 /* materials_Cable_Attachment_CV.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Cable_Attachment_CV.library; sourceTree = "<group>"; };
+		10CA299615ADB24C00EFBA75 /* materials_Cable_Origin.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Cable_Origin.library; sourceTree = "<group>"; };
+		10CA299715ADB24C00EFBA75 /* materials_Display_04.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Display_04.library; sourceTree = "<group>"; };
+		10CA299815ADB24C00EFBA75 /* materials_Display_07.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Display_07.library; sourceTree = "<group>"; };
+		10CA299915ADB24C00EFBA75 /* materials_Display_09.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Display_09.library; sourceTree = "<group>"; };
+		10CA299A15ADB24C00EFBA75 /* materials_Fader_01.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Fader_01.library; sourceTree = "<group>"; };
+		10CA299B15ADB24C00EFBA75 /* materials_Fader_10.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Fader_10.library; sourceTree = "<group>"; };
+		10CA299C15ADB24C00EFBA75 /* materials_Hole_02.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Hole_02.library; sourceTree = "<group>"; };
+		10CA299D15ADB24C00EFBA75 /* materials_Knob_16.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Knob_16.library; sourceTree = "<group>"; };
+		10CA299E15ADB24C00EFBA75 /* materials_Lamp_05.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Lamp_05.library; sourceTree = "<group>"; };
+		10CA299F15ADB24C00EFBA75 /* materials_Mod_Wheel_01.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Mod_Wheel_01.library; sourceTree = "<group>"; };
+		10CA29A015ADB24C00EFBA75 /* materials_Panel_Back_2U.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Panel_Back_2U.library; sourceTree = "<group>"; };
+		10CA29A115ADB24C00EFBA75 /* materials_Panel_Back_Folded.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Panel_Back_Folded.library; sourceTree = "<group>"; };
+		10CA29A215ADB24C00EFBA75 /* materials_Panel_Brushed_Metal_01_Front_Folded.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Panel_Brushed_Metal_01_Front_Folded.library; sourceTree = "<group>"; };
+		10CA29A315ADB24C00EFBA75 /* materials_Panel_Front_Brushed_Metal_01_2U.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Panel_Front_Brushed_Metal_01_2U.library; sourceTree = "<group>"; };
+		10CA29A415ADB24C00EFBA75 /* materials_Panel_Front_Brushed_Metal_01_4U.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Panel_Front_Brushed_Metal_01_4U.library; sourceTree = "<group>"; };
+		10CA29A515ADB24C00EFBA75 /* materials_Placeholder.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Placeholder.library; sourceTree = "<group>"; };
+		10CA29A615ADB24C00EFBA75 /* materials_Screw_06.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Screw_06.library; sourceTree = "<group>"; };
+		10CA29A715ADB24C00EFBA75 /* materials_Tape_Horizontal.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Tape_Horizontal.library; sourceTree = "<group>"; };
+		10CA29A815ADB24C00EFBA75 /* materials_Tape_Vertical.library */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = materials_Tape_Vertical.library; sourceTree = "<group>"; };
+		10CA29AA15ADB24C00EFBA75 /* back.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = back.sg; sourceTree = "<group>"; };
+		10CA29AB15ADB24C00EFBA75 /* back_folded.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = back_folded.sg; sourceTree = "<group>"; };
+		10CA29AC15ADB24C00EFBA75 /* Button_09.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Button_09.sg; sourceTree = "<group>"; };
+		10CA29AD15ADB24C00EFBA75 /* Button_10.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Button_10.sg; sourceTree = "<group>"; };
+		10CA29AE15ADB24C00EFBA75 /* Button_12.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Button_12.sg; sourceTree = "<group>"; };
+		10CA29AF15ADB24C00EFBA75 /* Button_21.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Button_21.sg; sourceTree = "<group>"; };
+		10CA29B015ADB24C00EFBA75 /* Button_27.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Button_27.sg; sourceTree = "<group>"; };
+		10CA29B115ADB24C00EFBA75 /* Cable_Attachment_Audio.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Cable_Attachment_Audio.sg; sourceTree = "<group>"; };
+		10CA29B215ADB24C00EFBA75 /* Cable_Attachment_CV.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Cable_Attachment_CV.sg; sourceTree = "<group>"; };
+		10CA29B315ADB24C00EFBA75 /* Cable_Origin.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Cable_Origin.sg; sourceTree = "<group>"; };
+		10CA29B415ADB24C00EFBA75 /* Display_04.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Display_04.sg; sourceTree = "<group>"; };
+		10CA29B515ADB24C00EFBA75 /* Display_07.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Display_07.sg; sourceTree = "<group>"; };
+		10CA29B615ADB24C00EFBA75 /* Display_09.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Display_09.sg; sourceTree = "<group>"; };
+		10CA29B715ADB24C00EFBA75 /* Fader_01.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Fader_01.sg; sourceTree = "<group>"; };
+		10CA29B815ADB24C00EFBA75 /* Fader_10.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Fader_10.sg; sourceTree = "<group>"; };
+		10CA29B915ADB24C00EFBA75 /* front.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = front.sg; sourceTree = "<group>"; };
+		10CA29BA15ADB24C00EFBA75 /* front_folded.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = front_folded.sg; sourceTree = "<group>"; };
+		10CA29BB15ADB24C00EFBA75 /* Hole_02.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Hole_02.sg; sourceTree = "<group>"; };
+		10CA29BC15ADB24C00EFBA75 /* Knob_16.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Knob_16.sg; sourceTree = "<group>"; };
+		10CA29BD15ADB24C00EFBA75 /* Knob_SoundType.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Knob_SoundType.sg; sourceTree = "<group>"; };
+		10CA29BE15ADB24C00EFBA75 /* Lamp_05.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Lamp_05.sg; sourceTree = "<group>"; };
+		10CA29BF15ADB24C00EFBA75 /* Mod_Wheel_01.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Mod_Wheel_01.sg; sourceTree = "<group>"; };
+		10CA29C015ADB24C00EFBA75 /* Panel_Back_2U.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Panel_Back_2U.sg; sourceTree = "<group>"; };
+		10CA29C115ADB24C00EFBA75 /* Panel_Back_Folded.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Panel_Back_Folded.sg; sourceTree = "<group>"; };
+		10CA29C215ADB24C00EFBA75 /* Panel_Front_2U.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Panel_Front_2U.sg; sourceTree = "<group>"; };
+		10CA29C315ADB24C00EFBA75 /* Panel_Front_Folded.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Panel_Front_Folded.sg; sourceTree = "<group>"; };
+		10CA29C415ADB24C00EFBA75 /* Patch_Browse_Group.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Patch_Browse_Group.sg; sourceTree = "<group>"; };
+		10CA29C515ADB24C00EFBA75 /* Placeholder.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Placeholder.sg; sourceTree = "<group>"; };
+		10CA29C615ADB24C00EFBA75 /* Screw_06.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Screw_06.sg; sourceTree = "<group>"; };
+		10CA29C715ADB24C00EFBA75 /* Tape_Horizontal.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Tape_Horizontal.sg; sourceTree = "<group>"; };
+		10CA29C815ADB24C00EFBA75 /* Tape_Vertical.sg */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Tape_Vertical.sg; sourceTree = "<group>"; };
+		10CA29CA15ADB24C00EFBA75 /* hdgui.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hdgui.lua; sourceTree = "<group>"; };
+		10CA29CC15ADB24C00EFBA75 /* Button_09_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Button_09_df.tga; sourceTree = "<group>"; };
+		10CA29CD15ADB24C00EFBA75 /* Button_09_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Button_09_sp.tga; sourceTree = "<group>"; };
+		10CA29CE15ADB24C00EFBA75 /* Button_21_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Button_21_df.tga; sourceTree = "<group>"; };
+		10CA29CF15ADB24C00EFBA75 /* Button_21_rf.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Button_21_rf.tga; sourceTree = "<group>"; };
+		10CA29D015ADB24C00EFBA75 /* Button_21_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Button_21_sp.tga; sourceTree = "<group>"; };
+		10CA29D115ADB24C00EFBA75 /* Button_27_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Button_27_df.tga; sourceTree = "<group>"; };
+		10CA29D215ADB24C00EFBA75 /* Button_27_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Button_27_sp.tga; sourceTree = "<group>"; };
+		10CA29D315ADB24C00EFBA75 /* Cable_Attachment_Audio_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cable_Attachment_Audio_df.tga; sourceTree = "<group>"; };
+		10CA29D415ADB24C00EFBA75 /* Cable_Attachment_Audio_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cable_Attachment_Audio_nm.tga; sourceTree = "<group>"; };
+		10CA29D515ADB24C00EFBA75 /* Cable_Attachment_Audio_ref.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cable_Attachment_Audio_ref.tga; sourceTree = "<group>"; };
+		10CA29D615ADB24C00EFBA75 /* Cable_Attachment_Audio_sh.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cable_Attachment_Audio_sh.tga; sourceTree = "<group>"; };
+		10CA29D715ADB24C00EFBA75 /* Cable_Attachment_Audio_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cable_Attachment_Audio_sp.tga; sourceTree = "<group>"; };
+		10CA29D815ADB24C00EFBA75 /* Cable_Origin_alpha.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cable_Origin_alpha.tga; sourceTree = "<group>"; };
+		10CA29D915ADB24C00EFBA75 /* Cable_Origin_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cable_Origin_df.tga; sourceTree = "<group>"; };
+		10CA29DA15ADB24C00EFBA75 /* Cable_Origin_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cable_Origin_nm.tga; sourceTree = "<group>"; };
+		10CA29DB15ADB24C00EFBA75 /* Cable_Origin_ref.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cable_Origin_ref.tga; sourceTree = "<group>"; };
+		10CA29DC15ADB24C00EFBA75 /* Display_04_part_01_alpha.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_04_part_01_alpha.tga; sourceTree = "<group>"; };
+		10CA29DD15ADB24C00EFBA75 /* Display_04_part_01_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_04_part_01_df.tga; sourceTree = "<group>"; };
+		10CA29DE15ADB24C00EFBA75 /* Display_04_part_01_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_04_part_01_nm.tga; sourceTree = "<group>"; };
+		10CA29DF15ADB24C00EFBA75 /* Display_07_part_01_alpha.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_07_part_01_alpha.tga; sourceTree = "<group>"; };
+		10CA29E015ADB24C00EFBA75 /* Display_07_part_01_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_07_part_01_df.tga; sourceTree = "<group>"; };
+		10CA29E115ADB24C00EFBA75 /* Display_07_part_01_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_07_part_01_nm.tga; sourceTree = "<group>"; };
+		10CA29E215ADB24C00EFBA75 /* Display_07_part_02_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_07_part_02_df.tga; sourceTree = "<group>"; };
+		10CA29E315ADB24C00EFBA75 /* Display_09_part_01_alpha.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_09_part_01_alpha.tga; sourceTree = "<group>"; };
+		10CA29E415ADB24C00EFBA75 /* Display_09_part_01_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_09_part_01_nm.tga; sourceTree = "<group>"; };
+		10CA29E515ADB24C00EFBA75 /* Display_Waveform_sin_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_Waveform_sin_df.tga; sourceTree = "<group>"; };
+		10CA29E615ADB24C00EFBA75 /* Display_Waveform_triangle_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_Waveform_triangle_df.tga; sourceTree = "<group>"; };
+		10CA29E715ADB24C00EFBA75 /* Fader_01_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fader_01_df.tga; sourceTree = "<group>"; };
+		10CA29E815ADB24C00EFBA75 /* Fader_01_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fader_01_sp.tga; sourceTree = "<group>"; };
+		10CA29E915ADB24C00EFBA75 /* Hole_01_alpha.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole_01_alpha.tga; sourceTree = "<group>"; };
+		10CA29EA15ADB24C00EFBA75 /* Hole_01_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole_01_df.tga; sourceTree = "<group>"; };
+		10CA29EB15ADB24C00EFBA75 /* Hole_01_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole_01_nm.tga; sourceTree = "<group>"; };
+		10CA29EC15ADB24C00EFBA75 /* Hole_01_ref.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole_01_ref.tga; sourceTree = "<group>"; };
+		10CA29ED15ADB24C00EFBA75 /* Knob_04_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Knob_04_df.tga; sourceTree = "<group>"; };
+		10CA29EE15ADB24C00EFBA75 /* Knob_04_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Knob_04_nm.tga; sourceTree = "<group>"; };
+		10CA29EF15ADB24C00EFBA75 /* Knob_04_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Knob_04_sp.tga; sourceTree = "<group>"; };
+		10CA29F015ADB24C00EFBA75 /* Lamp_05_part_02_alpha.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lamp_05_part_02_alpha.tga; sourceTree = "<group>"; };
+		10CA29F115ADB24C00EFBA75 /* Lamp_05_part_02_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lamp_05_part_02_df.tga; sourceTree = "<group>"; };
+		10CA29F215ADB24C00EFBA75 /* Lamp_05_part_02_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lamp_05_part_02_nm.tga; sourceTree = "<group>"; };
+		10CA29F315ADB24C00EFBA75 /* Lamp_05_rf_dark.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lamp_05_rf_dark.tga; sourceTree = "<group>"; };
+		10CA29F415ADB24C00EFBA75 /* Lamp_05_rf_lit.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lamp_05_rf_lit.tga; sourceTree = "<group>"; };
+		10CA29F515ADB24C00EFBA75 /* Mod_Wheel_01_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mod_Wheel_01_df.tga; sourceTree = "<group>"; };
+		10CA29F615ADB24C00EFBA75 /* Mod_Wheel_01_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mod_Wheel_01_sp.tga; sourceTree = "<group>"; };
+		10CA29F715ADB24C00EFBA75 /* Panel_Back_2U_part_02_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Back_2U_part_02_df.tga; sourceTree = "<group>"; };
+		10CA29F815ADB24C00EFBA75 /* Panel_Back_2U_part_02_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Back_2U_part_02_nm.tga; sourceTree = "<group>"; };
+		10CA29F915ADB24C00EFBA75 /* Panel_Back_2U_part_02_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Back_2U_part_02_sp.tga; sourceTree = "<group>"; };
+		10CA29FA15ADB24C00EFBA75 /* Panel_Back_Folded_part_02_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Back_Folded_part_02_df.tga; sourceTree = "<group>"; };
+		10CA29FB15ADB24C00EFBA75 /* Panel_Back_Folded_part_02_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Back_Folded_part_02_nm.tga; sourceTree = "<group>"; };
+		10CA29FC15ADB24C00EFBA75 /* Panel_Back_Folded_part_02_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Back_Folded_part_02_sp.tga; sourceTree = "<group>"; };
+		10CA29FD15ADB24C00EFBA75 /* Panel_Back_part_01_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Back_part_01_df.tga; sourceTree = "<group>"; };
+		10CA29FE15ADB24C00EFBA75 /* Panel_Back_part_01_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Back_part_01_nm.tga; sourceTree = "<group>"; };
+		10CA29FF15ADB24C00EFBA75 /* Panel_Back_part_01_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Back_part_01_sp.tga; sourceTree = "<group>"; };
+		10CA2A0015ADB24C00EFBA75 /* Panel_Brushed_Metal_01_2U_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Brushed_Metal_01_2U_df.tga; sourceTree = "<group>"; };
+		10CA2A0115ADB24C00EFBA75 /* Panel_Brushed_Metal_01_2U_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Brushed_Metal_01_2U_nm.tga; sourceTree = "<group>"; };
+		10CA2A0215ADB24C00EFBA75 /* Panel_Brushed_Metal_01_2U_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Brushed_Metal_01_2U_sp.tga; sourceTree = "<group>"; };
+		10CA2A0315ADB24C00EFBA75 /* Panel_Brushed_Metal_01_Front_Folded_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Brushed_Metal_01_Front_Folded_df.tga; sourceTree = "<group>"; };
+		10CA2A0415ADB24C00EFBA75 /* Panel_Brushed_Metal_01_Front_Folded_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Brushed_Metal_01_Front_Folded_nm.tga; sourceTree = "<group>"; };
+		10CA2A0515ADB24C00EFBA75 /* Panel_Brushed_Metal_01_Front_Folded_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel_Brushed_Metal_01_Front_Folded_sp.tga; sourceTree = "<group>"; };
+		10CA2A0615ADB24C00EFBA75 /* Screw_06_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Screw_06_df.tga; sourceTree = "<group>"; };
+		10CA2A0715ADB24C00EFBA75 /* Screw_06_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Screw_06_nm.tga; sourceTree = "<group>"; };
+		10CA2A0815ADB24C00EFBA75 /* Screw_06_sp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Screw_06_sp.tga; sourceTree = "<group>"; };
+		10CA2A0915ADB24C00EFBA75 /* Tangent_Circular.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tangent_Circular.tga; sourceTree = "<group>"; };
+		10CA2A0A15ADB24C00EFBA75 /* Tangent_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tangent_nm.tga; sourceTree = "<group>"; };
+		10CA2A0B15ADB24C00EFBA75 /* Tangent_Straight_X.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tangent_Straight_X.tga; sourceTree = "<group>"; };
+		10CA2A0C15ADB24C00EFBA75 /* Tape_Horizontal_alpha.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tape_Horizontal_alpha.tga; sourceTree = "<group>"; };
+		10CA2A0D15ADB24C00EFBA75 /* Tape_Horizontal_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tape_Horizontal_df.tga; sourceTree = "<group>"; };
+		10CA2A0E15ADB24C00EFBA75 /* Tape_Horizontal_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tape_Horizontal_nm.tga; sourceTree = "<group>"; };
+		10CA2A0F15ADB24C00EFBA75 /* Tape_Vertical_alpha.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tape_Vertical_alpha.tga; sourceTree = "<group>"; };
+		10CA2A1015ADB24C00EFBA75 /* Tape_Vertical_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tape_Vertical_df.tga; sourceTree = "<group>"; };
+		10CA2A1115ADB24C00EFBA75 /* Tape_Vertical_nm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tape_Vertical_nm.tga; sourceTree = "<group>"; };
+		2F8D44E11471076E001A9E8E /* info.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = info.lua; sourceTree = "<group>"; };
+		2F8D44E31471076E001A9E8E /* motherboard_def.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = motherboard_def.lua; sourceTree = "<group>"; };
+		2F8D44E41471076E001A9E8E /* realtime_controller.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = realtime_controller.lua; sourceTree = "<group>"; };
+		9172877F15B01CAC005FC0EB /* SI2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SI2.cpp; sourceTree = "<group>"; };
+		9172878D15B043FE005FC0EB /* SampleSound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleSound.cpp; sourceTree = "<group>"; };
+		9172878E15B043FE005FC0EB /* Voice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Voice.cpp; sourceTree = "<group>"; };
+		9172878F15B043FE005FC0EB /* VoicePool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VoicePool.cpp; sourceTree = "<group>"; };
+		91ED40E1154070D2000B9DE4 /* build.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = build.py; sourceTree = "<group>"; };
+		91ED40E2154070D2000B9DE4 /* buildconfig.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = buildconfig.py; sourceTree = "<group>"; };
+		91ED40E3154070E1000B9DE4 /* Xcode_DirSetup.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Xcode_DirSetup.xcconfig; sourceTree = "<group>"; };
+		91ED4258154DCD8C000B9DE4 /* SI2.device */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; name = SI2.device; path = GUI/SI2.device; sourceTree = "<group>"; };
+		A82FA4F71536F55100C10BC3 /* build45.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = build45.py; sourceTree = "<group>"; };
+		D641F0DF165B08FF00C4A926 /* Display_Waveform_squarehx_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_Waveform_squarehx_df.tga; sourceTree = "<group>"; };
+		D6553E411791CD1C00E60C3A /* REtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = REtest.xcodeproj; path = REtest/REtest.xcodeproj; sourceTree = "<group>"; };
+		D697B1931659F7BE00F2DD1E /* Display_Waveform_square_df.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Display_Waveform_square_df.tga; sourceTree = "<group>"; };
+		F74F00FD159CC231000245A5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F74F00FE159CC231000245A5 /* JukeboxExports.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JukeboxExports.cpp; sourceTree = "<group>"; };
+		F74F00FF159CC231000245A5 /* SampleSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleSound.h; sourceTree = "<group>"; };
+		F74F0100159CC231000245A5 /* SI2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SI2.h; sourceTree = "<group>"; };
+		F74F0101159CC231000245A5 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		F74F0102159CC231000245A5 /* Voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voice.h; sourceTree = "<group>"; };
+		F74F0103159CC231000245A5 /* VoicePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoicePool.h; sourceTree = "<group>"; };
+		F74F0104159CC231000245A5 /* WaveFormType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveFormType.h; sourceTree = "<group>"; };
+		F74F0106159CC252000245A5 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		101C9AC014C86C8C000DCA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* SimpleInstrument */ = {
+			isa = PBXGroup;
+			children = (
+				F74F0106159CC252000245A5 /* README.txt */,
+				A82FA4F71536F55100C10BC3 /* build45.py */,
+				91ED40E3154070E1000B9DE4 /* Xcode_DirSetup.xcconfig */,
+				101C9A5B14C86C4A000DCA37 /* JukeboxSDK */,
+				2F8D44E51471076E001A9E8E /* Resources */,
+				91ED4250154DCD07000B9DE4 /* GUI */,
+				101C9CBC14C882F8000DCA37 /* Scripts */,
+				10CA2A1415ADB27F00EFBA75 /* Source */,
+				101C9AC314C86C8C000DCA37 /* Products */,
+			);
+			name = SimpleInstrument;
+			sourceTree = "<group>";
+		};
+		101C9A5B14C86C4A000DCA37 /* JukeboxSDK */ = {
+			isa = PBXGroup;
+			children = (
+				101C9A5C14C86C4A000DCA37 /* API */,
+				101C9AA914C86C4A000DCA37 /* Tools */,
+			);
+			name = JukeboxSDK;
+			path = ../..;
+			sourceTree = SOURCE_ROOT;
+		};
+		101C9A5C14C86C4A000DCA37 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				101C9A5D14C86C4A000DCA37 /* Jukebox.h */,
+				101C9A5E14C86C4A000DCA37 /* JukeboxTypes.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		101C9AA914C86C4A000DCA37 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				101C9AAA14C86C4A000DCA37 /* Build */,
+				101C9AB114C86C4A000DCA37 /* Libs */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		101C9AAA14C86C4A000DCA37 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				91ED40E1154070D2000B9DE4 /* build.py */,
+				91ED40E2154070D2000B9DE4 /* buildconfig.py */,
+				101C9AAD14C86C4A000DCA37 /* Xcode */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		101C9AAD14C86C4A000DCA37 /* Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				101C9AAE14C86C4A000DCA37 /* General settings.xcconfig */,
+				10B680A314D1A92F0019366B /* Local Xcode general.xcconfig */,
+				10B680A114D1A92F0019366B /* Local Xcode debugging.xcconfig */,
+				10B680A414D1A92F0019366B /* Local Xcode testing.xcconfig */,
+				10B680A214D1A92F0019366B /* Local Xcode deployment.xcconfig */,
+				101C9AB014C86C4A000DCA37 /* RackExtensionExports.exp */,
+			);
+			path = Xcode;
+			sourceTree = "<group>";
+		};
+		101C9AB114C86C4A000DCA37 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				101C9AB214C86C4A000DCA37 /* Jukebox */,
+				101C9AB614C86C4A000DCA37 /* Xcode */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		101C9AB214C86C4A000DCA37 /* Jukebox */ = {
+			isa = PBXGroup;
+			children = (
+				101C9AB314C86C4A000DCA37 /* ShimABI */,
+			);
+			path = Jukebox;
+			sourceTree = "<group>";
+		};
+		101C9AB314C86C4A000DCA37 /* ShimABI */ = {
+			isa = PBXGroup;
+			children = (
+				101C9AB414C86C4A000DCA37 /* JukeboxABI.cpp */,
+				101C9AB514C86C4A000DCA37 /* JukeboxABI.h */,
+			);
+			path = ShimABI;
+			sourceTree = "<group>";
+		};
+		101C9AB614C86C4A000DCA37 /* Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				101C9AB714C86C4A000DCA37 /* DummyStaticInit.c */,
+			);
+			path = Xcode;
+			sourceTree = "<group>";
+		};
+		101C9AC314C86C8C000DCA37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				101C9AC214C86C8C000DCA37 /* RELibrary.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		101C9CBC14C882F8000DCA37 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				2F8D44E11471076E001A9E8E /* info.lua */,
+				2F8D44E31471076E001A9E8E /* motherboard_def.lua */,
+				2F8D44E41471076E001A9E8E /* realtime_controller.lua */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		10CA294915ADB20600EFBA75 /* English */ = {
+			isa = PBXGroup;
+			children = (
+				10CA294A15ADB20600EFBA75 /* texts.lua */,
+			);
+			path = English;
+			sourceTree = "<group>";
+		};
+		10CA294B15ADB20600EFBA75 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				10CA294C15ADB20600EFBA75 /* Sample_192000.wav */,
+				10CA294D15ADB20600EFBA75 /* Sample_22050.wav */,
+				10CA294E15ADB20600EFBA75 /* Sample_44100.wav */,
+				10CA294F15ADB20600EFBA75 /* Sample_48000.wav */,
+				10CA295015ADB20600EFBA75 /* Sample_88200.wav */,
+				10CA295115ADB20600EFBA75 /* Sample_96000.wav */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		10CA295215ADB20600EFBA75 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				10CA295315ADB20600EFBA75 /* Plain Sinus.repatch */,
+				10CA295415ADB20600EFBA75 /* Triangle with sample.repatch */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		10CA295515ADB24B00EFBA75 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				10CA295615ADB24B00EFBA75 /* DeviceIcon.png */,
+				10CA295715ADB24B00EFBA75 /* DeviceNavigator.png */,
+				10CA295815ADB24B00EFBA75 /* DeviceNavigatorFolded.png */,
+				10CA295915ADB24B00EFBA75 /* DevicePaletteImage.png */,
+				10CA295A15ADB24B00EFBA75 /* DeviceTrackListThumbnail.png */,
+				10CA295B15ADB24B00EFBA75 /* gui.lua */,
+				10CA295C15ADB24B00EFBA75 /* Reason_GUI_back_folded_root_Panel.png */,
+				10CA295D15ADB24B00EFBA75 /* Reason_GUI_back_root_Panel.png */,
+				10CA295E15ADB24B00EFBA75 /* Reason_GUI_front_folded_root_Fader_Bypass_Fader_Bypass_Fader_Bypass_Handle.png */,
+				10CA295F15ADB24B00EFBA75 /* Reason_GUI_front_folded_root_Panel.png */,
+				10CA296015ADB24B00EFBA75 /* Reason_GUI_front_root_Button_DelaySync.png */,
+				10CA296115ADB24B00EFBA75 /* Reason_GUI_front_root_Button_SamplePlay.png */,
+				10CA296215ADB24B00EFBA75 /* Reason_GUI_front_root_Display_Waveform.png */,
+				10CA296315ADB24B00EFBA75 /* Reason_GUI_front_root_Display_Waveform_UpDown_Button.png */,
+				10CA296415ADB24B00EFBA75 /* Reason_GUI_front_root_Fader_Bypass_Fader_Bypass_Fader_Bypass_Handle.png */,
+				10CA296515ADB24B00EFBA75 /* Reason_GUI_front_root_Fader_Volume.png */,
+				10CA296615ADB24B00EFBA75 /* Reason_GUI_front_root_Fader_Volume_Fader_Volume_Handle.png */,
+				10CA296715ADB24B00EFBA75 /* Reason_GUI_front_root_Knob_Delay.png */,
+				10CA296815ADB24B00EFBA75 /* Reason_GUI_front_root_Knob_Frequency.png */,
+				10CA296915ADB24B00EFBA75 /* Reason_GUI_front_root_Knob_Load.png */,
+				10CA296A15ADB24B00EFBA75 /* Reason_GUI_front_root_Knob_Volume.png */,
+				10CA296B15ADB24B00EFBA75 /* Reason_GUI_front_root_Lamp_NoteOn.png */,
+				10CA296C15ADB24B00EFBA75 /* Reason_GUI_front_root_Lamp_Running.png */,
+				10CA296D15ADB24B00EFBA75 /* Reason_GUI_front_root_Lamp_Silent.png */,
+				10CA296E15ADB24B00EFBA75 /* Reason_GUI_front_root_Lamp_WaitingForSilentTimeout.png */,
+				10CA296F15ADB24B00EFBA75 /* Reason_GUI_front_root_Panel.png */,
+				10CA297015ADB24B00EFBA75 /* Reason_GUI_front_root_Wheel_Mod.png */,
+				10CA297115ADB24B00EFBA75 /* Reason_GUI_front_root_Wheel_Pitch.png */,
+			);
+			name = Output;
+			path = GUI/Output;
+			sourceTree = "<group>";
+		};
+		10CA297215ADB24B00EFBA75 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				10CA297315ADB24B00EFBA75 /* geometries */,
+				10CA298E15ADB24C00EFBA75 /* materials */,
+				10CA29A915ADB24C00EFBA75 /* scenegraphs */,
+				10CA29C915ADB24C00EFBA75 /* scripts */,
+				10CA29CB15ADB24C00EFBA75 /* textures */,
+			);
+			name = resources;
+			path = GUI/resources;
+			sourceTree = "<group>";
+		};
+		10CA297315ADB24B00EFBA75 /* geometries */ = {
+			isa = PBXGroup;
+			children = (
+				10CA297415ADB24B00EFBA75 /* Button_09.dae */,
+				10CA297515ADB24B00EFBA75 /* Button_10.dae */,
+				10CA297615ADB24B00EFBA75 /* Button_12.dae */,
+				10CA297715ADB24B00EFBA75 /* Button_21.dae */,
+				10CA297815ADB24B00EFBA75 /* Button_27.dae */,
+				10CA297915ADB24B00EFBA75 /* Cable_Attachment_Audio.dae */,
+				10CA297A15ADB24B00EFBA75 /* Cable_Attachment_CV.dae */,
+				10CA297B15ADB24B00EFBA75 /* Cable_Origin.dae */,
+				10CA297C15ADB24B00EFBA75 /* Display_04.dae */,
+				10CA297D15ADB24B00EFBA75 /* Display_07.dae */,
+				10CA297E15ADB24B00EFBA75 /* Display_09.dae */,
+				10CA297F15ADB24B00EFBA75 /* Fader_01.dae */,
+				10CA298015ADB24B00EFBA75 /* Fader_10.dae */,
+				10CA298115ADB24B00EFBA75 /* Hole_02.dae */,
+				10CA298215ADB24B00EFBA75 /* Knob_16.dae */,
+				10CA298315ADB24B00EFBA75 /* Lamp_05.dae */,
+				10CA298415ADB24B00EFBA75 /* Mod_Wheel_01.dae */,
+				10CA298515ADB24B00EFBA75 /* Panel_Back_2U.dae */,
+				10CA298615ADB24B00EFBA75 /* Panel_Back_Folded.dae */,
+				10CA298715ADB24B00EFBA75 /* Panel_Front_2U.dae */,
+				10CA298815ADB24B00EFBA75 /* Panel_Front_Folded.dae */,
+				10CA298915ADB24B00EFBA75 /* Patch_Browse_Group_Frame.dae */,
+				10CA298A15ADB24B00EFBA75 /* Placeholder.dae */,
+				10CA298B15ADB24B00EFBA75 /* Screw_06.dae */,
+				10CA298C15ADB24C00EFBA75 /* Tape_Horizontal.dae */,
+				10CA298D15ADB24C00EFBA75 /* Tape_Vertical.dae */,
+			);
+			path = geometries;
+			sourceTree = "<group>";
+		};
+		10CA298E15ADB24C00EFBA75 /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				10CA298F15ADB24C00EFBA75 /* materials_Button_09.library */,
+				10CA299015ADB24C00EFBA75 /* materials_Button_10.library */,
+				10CA299115ADB24C00EFBA75 /* materials_Button_12.library */,
+				10CA299215ADB24C00EFBA75 /* materials_Button_21.library */,
+				10CA299315ADB24C00EFBA75 /* materials_Button_27.library */,
+				10CA299415ADB24C00EFBA75 /* materials_Cable_Attachment_Audio.library */,
+				10CA299515ADB24C00EFBA75 /* materials_Cable_Attachment_CV.library */,
+				10CA299615ADB24C00EFBA75 /* materials_Cable_Origin.library */,
+				10CA299715ADB24C00EFBA75 /* materials_Display_04.library */,
+				10CA299815ADB24C00EFBA75 /* materials_Display_07.library */,
+				10CA299915ADB24C00EFBA75 /* materials_Display_09.library */,
+				10CA299A15ADB24C00EFBA75 /* materials_Fader_01.library */,
+				10CA299B15ADB24C00EFBA75 /* materials_Fader_10.library */,
+				10CA299C15ADB24C00EFBA75 /* materials_Hole_02.library */,
+				10CA299D15ADB24C00EFBA75 /* materials_Knob_16.library */,
+				10CA299E15ADB24C00EFBA75 /* materials_Lamp_05.library */,
+				10CA299F15ADB24C00EFBA75 /* materials_Mod_Wheel_01.library */,
+				10CA29A015ADB24C00EFBA75 /* materials_Panel_Back_2U.library */,
+				10CA29A115ADB24C00EFBA75 /* materials_Panel_Back_Folded.library */,
+				10CA29A215ADB24C00EFBA75 /* materials_Panel_Brushed_Metal_01_Front_Folded.library */,
+				10CA29A315ADB24C00EFBA75 /* materials_Panel_Front_Brushed_Metal_01_2U.library */,
+				10CA29A415ADB24C00EFBA75 /* materials_Panel_Front_Brushed_Metal_01_4U.library */,
+				10CA29A515ADB24C00EFBA75 /* materials_Placeholder.library */,
+				10CA29A615ADB24C00EFBA75 /* materials_Screw_06.library */,
+				10CA29A715ADB24C00EFBA75 /* materials_Tape_Horizontal.library */,
+				10CA29A815ADB24C00EFBA75 /* materials_Tape_Vertical.library */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
+		10CA29A915ADB24C00EFBA75 /* scenegraphs */ = {
+			isa = PBXGroup;
+			children = (
+				10CA29AA15ADB24C00EFBA75 /* back.sg */,
+				10CA29AB15ADB24C00EFBA75 /* back_folded.sg */,
+				10CA29AC15ADB24C00EFBA75 /* Button_09.sg */,
+				10CA29AD15ADB24C00EFBA75 /* Button_10.sg */,
+				10CA29AE15ADB24C00EFBA75 /* Button_12.sg */,
+				10CA29AF15ADB24C00EFBA75 /* Button_21.sg */,
+				10CA29B015ADB24C00EFBA75 /* Button_27.sg */,
+				10CA29B115ADB24C00EFBA75 /* Cable_Attachment_Audio.sg */,
+				10CA29B215ADB24C00EFBA75 /* Cable_Attachment_CV.sg */,
+				10CA29B315ADB24C00EFBA75 /* Cable_Origin.sg */,
+				10CA29B415ADB24C00EFBA75 /* Display_04.sg */,
+				10CA29B515ADB24C00EFBA75 /* Display_07.sg */,
+				10CA29B615ADB24C00EFBA75 /* Display_09.sg */,
+				10CA29B715ADB24C00EFBA75 /* Fader_01.sg */,
+				10CA29B815ADB24C00EFBA75 /* Fader_10.sg */,
+				10CA29B915ADB24C00EFBA75 /* front.sg */,
+				10CA29BA15ADB24C00EFBA75 /* front_folded.sg */,
+				10CA29BB15ADB24C00EFBA75 /* Hole_02.sg */,
+				10CA29BC15ADB24C00EFBA75 /* Knob_16.sg */,
+				10CA29BD15ADB24C00EFBA75 /* Knob_SoundType.sg */,
+				10CA29BE15ADB24C00EFBA75 /* Lamp_05.sg */,
+				10CA29BF15ADB24C00EFBA75 /* Mod_Wheel_01.sg */,
+				10CA29C015ADB24C00EFBA75 /* Panel_Back_2U.sg */,
+				10CA29C115ADB24C00EFBA75 /* Panel_Back_Folded.sg */,
+				10CA29C215ADB24C00EFBA75 /* Panel_Front_2U.sg */,
+				10CA29C315ADB24C00EFBA75 /* Panel_Front_Folded.sg */,
+				10CA29C415ADB24C00EFBA75 /* Patch_Browse_Group.sg */,
+				10CA29C515ADB24C00EFBA75 /* Placeholder.sg */,
+				10CA29C615ADB24C00EFBA75 /* Screw_06.sg */,
+				10CA29C715ADB24C00EFBA75 /* Tape_Horizontal.sg */,
+				10CA29C815ADB24C00EFBA75 /* Tape_Vertical.sg */,
+			);
+			path = scenegraphs;
+			sourceTree = "<group>";
+		};
+		10CA29C915ADB24C00EFBA75 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				10CA29CA15ADB24C00EFBA75 /* hdgui.lua */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		10CA29CB15ADB24C00EFBA75 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				10CA29CC15ADB24C00EFBA75 /* Button_09_df.tga */,
+				10CA29CD15ADB24C00EFBA75 /* Button_09_sp.tga */,
+				10CA29CE15ADB24C00EFBA75 /* Button_21_df.tga */,
+				10CA29CF15ADB24C00EFBA75 /* Button_21_rf.tga */,
+				10CA29D015ADB24C00EFBA75 /* Button_21_sp.tga */,
+				10CA29D115ADB24C00EFBA75 /* Button_27_df.tga */,
+				10CA29D215ADB24C00EFBA75 /* Button_27_sp.tga */,
+				10CA29D315ADB24C00EFBA75 /* Cable_Attachment_Audio_df.tga */,
+				10CA29D415ADB24C00EFBA75 /* Cable_Attachment_Audio_nm.tga */,
+				10CA29D515ADB24C00EFBA75 /* Cable_Attachment_Audio_ref.tga */,
+				10CA29D615ADB24C00EFBA75 /* Cable_Attachment_Audio_sh.tga */,
+				10CA29D715ADB24C00EFBA75 /* Cable_Attachment_Audio_sp.tga */,
+				10CA29D815ADB24C00EFBA75 /* Cable_Origin_alpha.tga */,
+				10CA29D915ADB24C00EFBA75 /* Cable_Origin_df.tga */,
+				10CA29DA15ADB24C00EFBA75 /* Cable_Origin_nm.tga */,
+				10CA29DB15ADB24C00EFBA75 /* Cable_Origin_ref.tga */,
+				10CA29DC15ADB24C00EFBA75 /* Display_04_part_01_alpha.tga */,
+				10CA29DD15ADB24C00EFBA75 /* Display_04_part_01_df.tga */,
+				10CA29DE15ADB24C00EFBA75 /* Display_04_part_01_nm.tga */,
+				10CA29DF15ADB24C00EFBA75 /* Display_07_part_01_alpha.tga */,
+				10CA29E015ADB24C00EFBA75 /* Display_07_part_01_df.tga */,
+				10CA29E115ADB24C00EFBA75 /* Display_07_part_01_nm.tga */,
+				10CA29E215ADB24C00EFBA75 /* Display_07_part_02_df.tga */,
+				10CA29E315ADB24C00EFBA75 /* Display_09_part_01_alpha.tga */,
+				10CA29E415ADB24C00EFBA75 /* Display_09_part_01_nm.tga */,
+				10CA29E515ADB24C00EFBA75 /* Display_Waveform_sin_df.tga */,
+				D697B1931659F7BE00F2DD1E /* Display_Waveform_square_df.tga */,
+				D641F0DF165B08FF00C4A926 /* Display_Waveform_squarehx_df.tga */,
+				10CA29E615ADB24C00EFBA75 /* Display_Waveform_triangle_df.tga */,
+				10CA29E715ADB24C00EFBA75 /* Fader_01_df.tga */,
+				10CA29E815ADB24C00EFBA75 /* Fader_01_sp.tga */,
+				10CA29E915ADB24C00EFBA75 /* Hole_01_alpha.tga */,
+				10CA29EA15ADB24C00EFBA75 /* Hole_01_df.tga */,
+				10CA29EB15ADB24C00EFBA75 /* Hole_01_nm.tga */,
+				10CA29EC15ADB24C00EFBA75 /* Hole_01_ref.tga */,
+				10CA29ED15ADB24C00EFBA75 /* Knob_04_df.tga */,
+				10CA29EE15ADB24C00EFBA75 /* Knob_04_nm.tga */,
+				10CA29EF15ADB24C00EFBA75 /* Knob_04_sp.tga */,
+				10CA29F015ADB24C00EFBA75 /* Lamp_05_part_02_alpha.tga */,
+				10CA29F115ADB24C00EFBA75 /* Lamp_05_part_02_df.tga */,
+				10CA29F215ADB24C00EFBA75 /* Lamp_05_part_02_nm.tga */,
+				10CA29F315ADB24C00EFBA75 /* Lamp_05_rf_dark.tga */,
+				10CA29F415ADB24C00EFBA75 /* Lamp_05_rf_lit.tga */,
+				10CA29F515ADB24C00EFBA75 /* Mod_Wheel_01_df.tga */,
+				10CA29F615ADB24C00EFBA75 /* Mod_Wheel_01_sp.tga */,
+				10CA29F715ADB24C00EFBA75 /* Panel_Back_2U_part_02_df.tga */,
+				10CA29F815ADB24C00EFBA75 /* Panel_Back_2U_part_02_nm.tga */,
+				10CA29F915ADB24C00EFBA75 /* Panel_Back_2U_part_02_sp.tga */,
+				10CA29FA15ADB24C00EFBA75 /* Panel_Back_Folded_part_02_df.tga */,
+				10CA29FB15ADB24C00EFBA75 /* Panel_Back_Folded_part_02_nm.tga */,
+				10CA29FC15ADB24C00EFBA75 /* Panel_Back_Folded_part_02_sp.tga */,
+				10CA29FD15ADB24C00EFBA75 /* Panel_Back_part_01_df.tga */,
+				10CA29FE15ADB24C00EFBA75 /* Panel_Back_part_01_nm.tga */,
+				10CA29FF15ADB24C00EFBA75 /* Panel_Back_part_01_sp.tga */,
+				10CA2A0015ADB24C00EFBA75 /* Panel_Brushed_Metal_01_2U_df.tga */,
+				10CA2A0115ADB24C00EFBA75 /* Panel_Brushed_Metal_01_2U_nm.tga */,
+				10CA2A0215ADB24C00EFBA75 /* Panel_Brushed_Metal_01_2U_sp.tga */,
+				10CA2A0315ADB24C00EFBA75 /* Panel_Brushed_Metal_01_Front_Folded_df.tga */,
+				10CA2A0415ADB24C00EFBA75 /* Panel_Brushed_Metal_01_Front_Folded_nm.tga */,
+				10CA2A0515ADB24C00EFBA75 /* Panel_Brushed_Metal_01_Front_Folded_sp.tga */,
+				10CA2A0615ADB24C00EFBA75 /* Screw_06_df.tga */,
+				10CA2A0715ADB24C00EFBA75 /* Screw_06_nm.tga */,
+				10CA2A0815ADB24C00EFBA75 /* Screw_06_sp.tga */,
+				10CA2A0915ADB24C00EFBA75 /* Tangent_Circular.tga */,
+				10CA2A0A15ADB24C00EFBA75 /* Tangent_nm.tga */,
+				10CA2A0B15ADB24C00EFBA75 /* Tangent_Straight_X.tga */,
+				10CA2A0C15ADB24C00EFBA75 /* Tape_Horizontal_alpha.tga */,
+				10CA2A0D15ADB24C00EFBA75 /* Tape_Horizontal_df.tga */,
+				10CA2A0E15ADB24C00EFBA75 /* Tape_Horizontal_nm.tga */,
+				10CA2A0F15ADB24C00EFBA75 /* Tape_Vertical_alpha.tga */,
+				10CA2A1015ADB24C00EFBA75 /* Tape_Vertical_df.tga */,
+				10CA2A1115ADB24C00EFBA75 /* Tape_Vertical_nm.tga */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		10CA2A1415ADB27F00EFBA75 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D6553E411791CD1C00E60C3A /* REtest.xcodeproj */,
+				F74F00FD159CC231000245A5 /* Constants.h */,
+				F74F00FE159CC231000245A5 /* JukeboxExports.cpp */,
+				9172878D15B043FE005FC0EB /* SampleSound.cpp */,
+				F74F00FF159CC231000245A5 /* SampleSound.h */,
+				9172877F15B01CAC005FC0EB /* SI2.cpp */,
+				F74F0100159CC231000245A5 /* SI2.h */,
+				F74F0101159CC231000245A5 /* Utils.h */,
+				9172878E15B043FE005FC0EB /* Voice.cpp */,
+				F74F0102159CC231000245A5 /* Voice.h */,
+				9172878F15B043FE005FC0EB /* VoicePool.cpp */,
+				F74F0103159CC231000245A5 /* VoicePool.h */,
+				F74F0104159CC231000245A5 /* WaveFormType.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		2F8D44E51471076E001A9E8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10CA294915ADB20600EFBA75 /* English */,
+				10CA294B15ADB20600EFBA75 /* Private */,
+				10CA295215ADB20600EFBA75 /* Public */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		91ED4250154DCD07000B9DE4 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				10CA295515ADB24B00EFBA75 /* Output */,
+				10CA297215ADB24B00EFBA75 /* resources */,
+				91ED4258154DCD8C000B9DE4 /* SI2.device */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		D6553E421791CD1C00E60C3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6553E461791CD1D00E60C3A /* REtest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		2F8D44A9146D7DDA001A9E8E /* Universal 45 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "build45.py Mac universal45";
+			buildConfigurationList = 2F8D44AE146D7E1A001A9E8E /* Build configuration list for PBXLegacyTarget "Universal 45" */;
+			buildPhases = (
+			);
+			buildToolPath = python;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "Universal 45";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Universal 45";
+		};
+		2F8D452714711817001A9E8E /* Local 45 LLVM */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "build45.py Mac local45 $ARCHS $CONFIGURATION";
+			buildConfigurationList = 2F8D452814711817001A9E8E /* Build configuration list for PBXLegacyTarget "Local 45 LLVM" */;
+			buildPhases = (
+			);
+			buildToolPath = python;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "Local 45 LLVM";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Universal 45";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		101C9AC114C86C8C000DCA37 /* Local 45 Xcode (for debugging) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 101C9AC714C86C8C000DCA37 /* Build configuration list for PBXNativeTarget "Local 45 Xcode (for debugging)" */;
+			buildPhases = (
+				101C9ABF14C86C8C000DCA37 /* Sources */,
+				101C9AC014C86C8C000DCA37 /* Frameworks */,
+				101C9B0214C87590000DCA37 /* Copy 45 to RackExtensions folder */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Local 45 Xcode (for debugging)";
+			productName = "Local 45 for debugging";
+			productReference = 101C9AC214C86C8C000DCA37 /* RELibrary.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 1DEB919308733D9F0010E9CD /* Build configuration list for PBXProject "SI2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* SimpleInstrument */;
+			productRefGroup = 101C9AC314C86C8C000DCA37 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D6553E421791CD1C00E60C3A /* Products */;
+					ProjectRef = D6553E411791CD1C00E60C3A /* REtest.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2F8D452714711817001A9E8E /* Local 45 LLVM */,
+				2F8D44A9146D7DDA001A9E8E /* Universal 45 */,
+				101C9AC114C86C8C000DCA37 /* Local 45 Xcode (for debugging) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D6553E461791CD1D00E60C3A /* REtest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = REtest;
+			remoteRef = D6553E451791CD1D00E60C3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		101C9B0214C87590000DCA37 /* Copy 45 to RackExtensions folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy 45 to RackExtensions folder";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python -u build45.py Mac copyresources\npython -u build45.py Mac copylibrary \"all\" \"${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		101C9ABF14C86C8C000DCA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101C9AC914C86CEB000DCA37 /* DummyStaticInit.c in Sources */,
+				101C9ACA14C86CEB000DCA37 /* JukeboxABI.cpp in Sources */,
+				F74F0105159CC231000245A5 /* JukeboxExports.cpp in Sources */,
+				9172878015B01CAC005FC0EB /* SI2.cpp in Sources */,
+				9172879015B043FE005FC0EB /* SampleSound.cpp in Sources */,
+				9172879115B043FE005FC0EB /* Voice.cpp in Sources */,
+				9172879215B043FE005FC0EB /* VoicePool.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		101C9AC414C86C8C000DCA37 /* Debugging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10B680A114D1A92F0019366B /* Local Xcode debugging.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Debugging;
+		};
+		101C9AC514C86C8C000DCA37 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10B680A214D1A92F0019366B /* Local Xcode deployment.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Deployment;
+		};
+		101C9AC614C86C8C000DCA37 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10B680A414D1A92F0019366B /* Local Xcode testing.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Testing;
+		};
+		1DEB919408733D9F0010E9CD /* Debugging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101C9AAE14C86C4A000DCA37 /* General settings.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					JUKEBOX_SDK,
+					DEBUG,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debugging;
+		};
+		1DEB919508733D9F0010E9CD /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101C9AAE14C86C4A000DCA37 /* General settings.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					JUKEBOX_SDK,
+					NDEBUG,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Deployment;
+		};
+		2F8D44AA146D7DDA001A9E8E /* Debugging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Debugging;
+		};
+		2F8D44AB146D7DDA001A9E8E /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_TARGET = universal45;
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Deployment;
+		};
+		2F8D451114710D89001A9E8E /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101C9AAE14C86C4A000DCA37 /* General settings.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					JUKEBOX_SDK,
+					DEBUG,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Testing;
+		};
+		2F8D451314710D89001A9E8E /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_TARGET = universal45;
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Testing;
+		};
+		2F8D452914711817001A9E8E /* Debugging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_TARGET = local45;
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Debugging;
+		};
+		2F8D452A14711817001A9E8E /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_TARGET = local45;
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Deployment;
+		};
+		2F8D452B14711817001A9E8E /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Testing;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		101C9AC714C86C8C000DCA37 /* Build configuration list for PBXNativeTarget "Local 45 Xcode (for debugging)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101C9AC414C86C8C000DCA37 /* Debugging */,
+				101C9AC614C86C8C000DCA37 /* Testing */,
+				101C9AC514C86C8C000DCA37 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debugging;
+		};
+		1DEB919308733D9F0010E9CD /* Build configuration list for PBXProject "SI2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB919408733D9F0010E9CD /* Debugging */,
+				2F8D451114710D89001A9E8E /* Testing */,
+				1DEB919508733D9F0010E9CD /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debugging;
+		};
+		2F8D44AE146D7E1A001A9E8E /* Build configuration list for PBXLegacyTarget "Universal 45" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F8D44AA146D7DDA001A9E8E /* Debugging */,
+				2F8D451314710D89001A9E8E /* Testing */,
+				2F8D44AB146D7DDA001A9E8E /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debugging;
+		};
+		2F8D452814711817001A9E8E /* Build configuration list for PBXLegacyTarget "Local 45 LLVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F8D452914711817001A9E8E /* Debugging */,
+				2F8D452B14711817001A9E8E /* Testing */,
+				2F8D452A14711817001A9E8E /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debugging;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

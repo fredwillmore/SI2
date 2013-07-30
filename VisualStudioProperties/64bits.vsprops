@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="64bits"
+	>
+	<UserMacro
+		Name="JBox_32or64"
+		Value="64"
+	/>
+</VisualStudioPropertySheet>

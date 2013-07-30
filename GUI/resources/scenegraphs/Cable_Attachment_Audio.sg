@@ -1,0 +1,16 @@
+<scenegraph version="1.0">
+	<translationNode id="cableaudio">
+	<translation distance="0 0 0"/>
+		<materialNode id="Cable_Attachment_Audio_mat">
+				<material name="propellerhead.Cable_Attachment_Audio"/>
+				<geometryNode id="Cable_Attachment_Audio_geom">
+					<shadows caster="true" receiver="true"/>
+					<collada file="Cable_Attachment_Audio.dae" geometry="Cable_Attachment_Audio"/>
+				</geometryNode>
+			</materialNode>
+
+			
+
+		
+	</translationNode>
+</scenegraph>

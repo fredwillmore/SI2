@@ -1,0 +1,13 @@
+<scenegraph version="1.0">
+	<materialNode id="Cable_Origin_mat">
+		<material name="propellerhead.Cable_Origin"/>
+		<decalNode id="Cable_Origin">
+			<drawOrder order="afterOpaque"/>
+			<layer value="0"/>
+			<geometryNode id="Cable_Origin_geom">
+				<shadows caster="false" receiver="false"/>
+				<collada file="Cable_Origin.dae" geometry="Cable_Origin"/>
+			</geometryNode>
+		</decalNode>
+	</materialNode>
+</scenegraph>

@@ -1,0 +1,21 @@
+<materials version="1.0" namespace="propellerhead">
+
+	<anisotropic id="Panel_Front_Brushed_Metal_01_2U" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file="Panel_Brushed_Metal_01_2U_nm.tga"/>
+		<tangentMap file="Tangent_Straight_X.tga"/>
+		<diffuse rgb="130 130 130"/>
+		<diffuseMap file="Panel_Brushed_Metal_01_2U_df.tga"/>
+		<specular rgb="180 180 180"/> 
+		<specularMap file="Panel_Brushed_Metal_01_2U_df.tga"/>
+		<shininess value="220"/>
+		<shininessMap file="Panel_Brushed_Metal_01_2U_sp.tga"/>
+		<lobeShape xy="100 100"/>
+	</anisotropic>
+
+	
+	
+
+</materials>

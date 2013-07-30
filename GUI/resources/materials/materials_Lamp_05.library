@@ -1,0 +1,71 @@
+<materials version="1.0" namespace="propellerhead">
+	
+	<phong id="Lamp_05_part_01_dark" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file=""/>
+		<diffuse rgb="50 0 0"/>
+		<diffuseMap file=""/>
+		<specular rgb="95 65 65"/> 
+		<specularMap file=""/>
+		<shininess value="255"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file="Lamp_05_rf_dark.tga"/>
+		<refraction rgb="145 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="7.0"/>
+	</phong>
+
+	<phong id="Lamp_05_part_01_lit" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file=""/>
+		<diffuse rgb="0 0 0"/>
+		<diffuseMap file=""/>
+		<specular rgb="25 5 5"/> 
+		<specularMap file=""/>
+		<shininess value="255"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="255 50 50"/>
+		<translucencyMap file=""/>
+		<absorption value="2.0"/>
+		<refractionMap file="Lamp_05_rf_lit.tga"/>
+		<refraction rgb="255 50 50"/>
+		<refractionIndex value="0.1"/>
+		<refractionIntensity value="21.0"/>
+	</phong>
+	
+	<phong id="Lamp_05_part_02" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file="Lamp_05_part_02_alpha.tga"/>
+		<reflectionMask file=""/>
+		<normalMap file="Lamp_05_part_02_nm.tga"/>
+		<diffuse rgb="0 0 0"/>
+		<diffuseMap file=""/>
+		<specular rgb="0 0 0"/> 
+		<specularMap file=""/>
+		<shininess value="0"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+</materials>

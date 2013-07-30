@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>magnus.ihrefors</author>
+      <authoring_tool>OpenCOLLADA2011 x64</authoring_tool>
+      <comments>
+			ColladaMaya export options: 
+			bakeTransforms=0;relativePaths=0;copyTextures=0;exportTriangles=1;exportCgfxFileReferences=1;
+			isSampling=0;curveConstrainSampling=0;removeStaticCurves=1;exportPolygonMeshes=1;exportLights=1;
+			exportCameras=1;exportJointsAndSkin=1;exportAnimations=1;exportInvisibleNodes=0;exportDefaultCameras=0;
+			exportTexCoords=1;exportNormals=1;exportNormalsPerVertex=1;exportVertexColors=1;exportVertexColorsPerVertex=1;
+			exportTexTangents=1;exportTangents=0;exportReferencedMaterials=0;exportMaterialsOnly=0;
+			exportXRefs=1;dereferenceXRefs=1;exportCameraAsLookat=0;cameraXFov=0;cameraYFov=1;doublePrecision=0
+		</comments>
+      <source_data>file:///C:/Maya_2011_Projects/3dAssets/scenes/All_Art_26.mb</source_data>
+    </contributor>
+    <created>2012-02-24T13:37:15</created>
+    <modified>2012-02-24T13:37:15</modified>
+    <unit name="millimeter" meter="0.001"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="Holes_mat" name="Holes_mat">
+      <instance_effect url="#Holes_mat-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Holes_mat-fx">
+      <profile_COMMON>
+        <newparam sid="file31-surface">
+          <surface type="2D">
+            <init_from>file31</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="file31-sampler">
+          <sampler2D>
+            <source>file31-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="file30-surface">
+          <surface type="2D">
+            <init_from>file30</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="file30-sampler">
+          <sampler2D>
+            <source>file30-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file31-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode>NONE</blend_mode>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <fast>0</fast>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <rotateFrame>0</rotateFrame>
+                    <rotateUV>0</rotateUV>
+                    <stagger>0</stagger>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float>20</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+          <extra>
+            <technique profile="OpenCOLLADAMaya">
+              <bump>
+                <texture texture="file30-sampler" texcoord="TEX1">
+                  <extra>
+                    <technique profile="OpenCOLLADA3dsMax">
+                      <amount>1</amount>
+                      <bumpInterp>1</bumpInterp>
+                    </technique>
+                    <technique profile="OpenCOLLADAMaya">
+                      <blend_mode>NONE</blend_mode>
+                      <coverageU>1</coverageU>
+                      <coverageV>1</coverageV>
+                      <fast>0</fast>
+                      <mirrorU>0</mirrorU>
+                      <mirrorV>0</mirrorV>
+                      <noiseU>0</noiseU>
+                      <noiseV>0</noiseV>
+                      <offsetU>0</offsetU>
+                      <offsetV>0</offsetV>
+                      <repeatU>1</repeatU>
+                      <repeatV>1</repeatV>
+                      <rotateFrame>0</rotateFrame>
+                      <rotateUV>0</rotateUV>
+                      <stagger>0</stagger>
+                      <translateFrameU>0</translateFrameU>
+                      <translateFrameV>0</translateFrameV>
+                      <wrapU>1</wrapU>
+                      <wrapV>1</wrapV>
+                    </technique>
+                  </extra>
+                </texture>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="file31" name="file31">
+      <init_from>file:///C:/Users/magnus.ihrefors/Desktop/Button_Ref/Assets/screws/Holes_df.psd</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+          <originalMayaNodeId>file31</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+    <image id="file30" name="file30">
+      <init_from>file:///C:/Users/magnus.ihrefors/Desktop/Button_Ref/Assets/screws/Holes_nm.psd</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+          <originalMayaNodeId>file30</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_geometries>
+    <geometry id="Hole_02_LOD0Shape" name="Hole_02_LOD0Shape">
+      <mesh>
+        <source id="Hole_02_LOD0Shape-positions" name="Hole_02_LOD0Shape-positions">
+          <float_array id="Hole_02_LOD0Shape-positions-array" count="12">1.462775 -14.60305 0.1226926 -1.462775 -14.60305 0.1226926 1.462775 14.60305 0.1226926 -1.462775 14.60305 0.1226926</float_array>
+          <technique_common>
+            <accessor source="#Hole_02_LOD0Shape-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Hole_02_LOD0Shape-normals" name="Hole_02_LOD0Shape-normals">
+          <float_array id="Hole_02_LOD0Shape-normals-array" count="12">0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Hole_02_LOD0Shape-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Hole_02_LOD0Shape-map1" name="Hole_02_LOD0Shape-map1">
+          <float_array id="Hole_02_LOD0Shape-map1-array" count="8">0.3089623 0.01246922 0.233215 0.01246922 0.3089622 0.6298539 0.2332149 0.6298539</float_array>
+          <technique_common>
+            <accessor source="#Hole_02_LOD0Shape-map1-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Hole_02_LOD0Shape-textangents">
+          <float_array id="Hole_02_LOD0Shape-textangents-array" count="12">1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#Hole_02_LOD0Shape-textangents-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Hole_02_LOD0Shape-texbinormals">
+          <float_array id="Hole_02_LOD0Shape-texbinormals-array" count="12">0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Hole_02_LOD0Shape-texbinormals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Hole_02_LOD0Shape-vertices" name="Hole_02_LOD0Shape-vertices">
+          <input semantic="POSITION" source="#Hole_02_LOD0Shape-positions"/>
+          <input semantic="NORMAL" source="#Hole_02_LOD0Shape-normals"/>
+        </vertices>
+        <triangles material="phong22SG" count="2">
+          <input semantic="VERTEX" source="#Hole_02_LOD0Shape-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#Hole_02_LOD0Shape-map1" offset="1" set="0"/>
+          <input semantic="TEXTANGENT" source="#Hole_02_LOD0Shape-textangents" offset="2" set="0"/>
+          <input semantic="TEXBINORMAL" source="#Hole_02_LOD0Shape-texbinormals" offset="2" set="0"/>
+          <p>3 3 0 1 1 1 2 2 3 2 2 3 1 1 1 0 0 2</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>Hole_02_LOD0Shape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="All_Art_26">
+      <node id="Hole_02_LOD0" name="Hole_02_LOD0" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#Hole_02_LOD0Shape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="phong22SG" target="#Holes_mat">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="TEX1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>Hole_02_LOD0</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

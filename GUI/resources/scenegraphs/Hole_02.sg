@@ -1,0 +1,19 @@
+<scenegraph version="1.0">
+	
+		<materialNode id="Hole_02_mat">
+				<material name="propellerhead.Hole_02"/>
+			<decalNode id="Hole_02_decal">
+			    <drawOrder order="afterOpaque"/>
+			    <layer value="0"/>
+			    <geometryNode id="Hole_02_geom">
+				   <shadows caster="true" receiver="true"/>
+				   <collada file="Hole_02.dae" geometry="Hole_02"/>
+			    </geometryNode>
+		    </decalNode>
+		</materialNode>
+
+			
+
+		
+	
+</scenegraph>

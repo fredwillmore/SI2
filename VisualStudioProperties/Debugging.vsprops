@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Debugging"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		Optimization="0"
+		PreprocessorDefinitions="DEBUG=1"
+		RuntimeLibrary="1"
+	/>
+	<UserMacro
+		Name="JBox_ConfigurationType"
+		Value="Debugging"
+	/>
+</VisualStudioPropertySheet>

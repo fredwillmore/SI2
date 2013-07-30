@@ -1,0 +1,6 @@
+<device>
+	<deviceFrontScenegraph file="front.sg"/>
+	<deviceFrontFoldedScenegraph file="front_folded.sg"/>
+	<deviceBackScenegraph file="back.sg"/>
+	<deviceBackFoldedScenegraph file="back_folded.sg"/>
+</device>

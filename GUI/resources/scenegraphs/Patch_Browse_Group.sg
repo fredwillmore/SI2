@@ -1,0 +1,57 @@
+<scenegraph version="1.0">
+	<translationNode id="Patch_Browser_Group">
+		<translation distance="0 0 0"/>
+
+		<visibilityNode id="Patch_Browse_Group_Frame">
+			<visible status="true"/>
+			<translationNode id="Patch_Browse_Group_Frame">
+				<translation distance="0 0 0"/>
+				<materialNode id="Patch_Browse_Group_Frame">
+					<material name="propellerhead.Button_09"/>
+					<geometryNode id="Patch_Browse_Group_Frame">
+						<shadows caster="false" receiver="false"/>
+						<collada file="Patch_Browse_Group_Frame.dae" geometry="Patch_Browse_Group_Frame"/>
+					</geometryNode>
+				</materialNode>
+			</translationNode>
+		</visibilityNode>
+	
+		<translationNode id="Patch_Browser_Group_Buttons">
+			<translation distance="-11.0 -2.7 0"/>
+			<translationNode id="button_09">
+				<translation distance="23.2 2.7 0"/>
+				<scenegraphNode id="button_09"> 
+					<scenegraph file="Button_09.sg"/>
+				</scenegraphNode>
+			</translationNode>
+			<translationNode id="button_10">
+				<translation distance="11.6 2.7 0"/>
+				<scenegraphNode id="button_10"> 
+					<scenegraph file="Button_10.sg"/>
+				</scenegraphNode>
+			</translationNode>
+			<translationNode id="button_12">
+				<translation distance="0 -0.2 0"/>
+				<rotationNode id="Button_12_rot">
+					<axis direction="0 0 1"/>
+					<angle degrees="0"/>
+					<pivot point="0 0 0"/>
+					<scenegraphNode id="Button_12"> 
+						<scenegraph file="Button_12.sg"/>
+					</scenegraphNode>
+				</rotationNode>
+			</translationNode>
+			<translationNode id="button_12_01">
+				<translation distance="0 5.6 0"/>
+				<rotationNode id="Button_12_rot">
+					<axis direction="0 0 1"/>
+					<angle degrees="180"/>
+					<pivot point="0 0 0"/>
+					<scenegraphNode id="Button_12"> 
+						<scenegraph file="Button_12.sg"/>
+					</scenegraphNode>
+				</rotationNode>			
+			</translationNode>
+		</translationNode>
+	</translationNode>
+</scenegraph>

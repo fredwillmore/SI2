@@ -1,0 +1,60 @@
+<scenegraph version="1.0">
+	<translationNode id="root">
+		<translation distance="0 0 0"/>
+
+		<!-- Panel -->
+		
+		<scenegraphNode id="Panel">
+			<scenegraph file="Panel_Back_2U.sg"/>
+		</scenegraphNode>
+
+		<!-- Device name tape strip -->
+		
+		<translationNode id="Device_Name">
+			<translation distance="-208 0 0.1"/>
+			<scenegraphNode id="Device_Name">
+				<scenegraph file="Tape_Vertical.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+		<!-- L & R audio sockets -->
+		
+		<translationNode id="Audio_Out_Socket_Left">
+			<translation distance="48 0 0"/>
+			<scenegraphNode id="Device_Name">
+				<scenegraph file="Cable_Attachment_Audio.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+		<translationNode id="Audio_Out_Socket_Right">
+			<translation distance="72 0 0"/>
+			<scenegraphNode id="Device_Name">
+				<scenegraph file="Cable_Attachment_Audio.sg"/>
+			</scenegraphNode>
+		</translationNode>
+		
+		<translationNode id="Note_CV_Socket">
+			<translation distance="-76 0 0"/>
+			<scenegraphNode id="Device_Name">
+				<scenegraph file="Cable_Attachment_CV.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+		<translationNode id="Note_Gate_Socket">
+			<translation distance="-38 0 0"/>
+			<scenegraphNode id="Device_Name">
+				<scenegraph file="Cable_Attachment_CV.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+		<!-- Placeholder -->
+		
+		<translationNode id="Placeholder">
+			<translation distance="-170 -30 0"/>
+			<scenegraphNode id="Placeholder">
+				<scenegraph file="Placeholder.sg"/>
+			</scenegraphNode>
+		</translationNode>
+		
+	</translationNode>
+</scenegraph>

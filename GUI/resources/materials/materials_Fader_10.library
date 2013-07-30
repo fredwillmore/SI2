@@ -1,0 +1,29 @@
+<materials version="1.0" namespace="propellerhead">
+	
+	<phong id="Fader_10" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file="Fader_10_nm.tga"/>
+		<diffuse rgb="255 255 255"/>
+		<diffuseMap file="Fader_10_df.tga"/>
+		<specular rgb="30 30 30"/> 
+		<specularMap file=""/>
+		<shininess value="8"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+	
+	
+	
+	
+</materials>

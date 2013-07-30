@@ -1,0 +1,18 @@
+<scenegraph version="1.0">
+	<materialNode id="Placeholder_mat">
+				<material name="propellerhead.Placeholder"/>
+			<decalNode id="Placeholder_decal">
+			    <drawOrder order="afterOpaque"/>
+			    <layer value="0"/>
+			    <geometryNode id="Placeholder_geom">
+				   <shadows caster="true" receiver="true"/>
+				   <collada file="Placeholder.dae" geometry="Placeholder"/>
+			    </geometryNode>
+		    </decalNode>
+	</materialNode>
+
+			
+
+		
+	
+</scenegraph>

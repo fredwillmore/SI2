@@ -1,0 +1,21 @@
+<scenegraph version="1.0">
+	<animationNode id="Mod_Wheel_01">
+		<frames count="64"/>
+		<rotationAngleKeys target="rotation">
+			<key frame="1" value="45"/>
+			<key frame="64" value="-45"/>
+		</rotationAngleKeys>
+		<rotationNode id="rotation">
+			<axis direction="1 0 0"/>
+			<angle degrees="0"/>
+			<pivot point="0 0 0"/>
+			<materialNode id="Mod_Wheel_01_mat">
+				<material name="propellerhead.Mod_Wheel_01"/>
+				<geometryNode id="Mod_Wheel_01_geom">
+					<shadows caster="true" receiver="true"/>
+					<collada file="Mod_Wheel_01.dae" geometry="Mod_Wheel_01"/>
+				</geometryNode>
+			</materialNode>
+		</rotationNode>
+	</animationNode>
+</scenegraph>

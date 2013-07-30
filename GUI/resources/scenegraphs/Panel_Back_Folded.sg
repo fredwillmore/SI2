@@ -1,0 +1,37 @@
+<scenegraph version="1.0">
+	<translationNode id="Panel_Back_Folded_part_01">
+		<translation distance="0 0 0"/>
+		<materialNode id="Panel_Back_Folded">
+			<material name="propellerhead.Panel_Back_Folded_part_01"/>
+			<geometryNode id="Panel_Back_Folded_part_01">
+				<shadows caster="true" receiver="true"/>
+				<collada file="Panel_Back_Folded.dae" geometry="Panel_Back_Folded_part_01"/>
+			</geometryNode>
+		</materialNode>
+		<materialNode id="Panel_Back_Folded_part_02">
+			<material name="propellerhead.Panel_Back_Folded_part_02"/>
+			<geometryNode id="Panel_Back_Folded_part_02">
+				<shadows caster="true" receiver="true"/>
+				<collada file="Panel_Back_Folded.dae" geometry="Panel_Back_Folded_part_02"/>
+			</geometryNode>
+		</materialNode>
+		
+	</translationNode>
+	
+
+</scenegraph>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

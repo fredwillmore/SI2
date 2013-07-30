@@ -1,0 +1,56 @@
+<materials version="1.0" namespace="propellerhead">
+
+
+
+
+     <phong id="Display_04_part_01" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file="Display_04_part_01_alpha.tga"/>
+		<reflectionMask file=""/>
+		<normalMap file="Display_04_part_01_nm.tga"/>
+		<diffuse rgb="255 255 255"/>
+		<diffuseMap file="Display_04_part_01_df.tga"/>
+		<specular rgb="1 1 1"/> 
+		<specularMap file=""/>
+		<shininess value="20"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+
+	<phong id="Display_04_part_02" template="" lod="0">
+		<opacity value="25"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file=""/>
+		<diffuse rgb="130 130 130"/>
+		<diffuseMap file=""/>
+		<specular rgb="196 199 199"/> 
+		<specularMap file=""/>
+		<shininess value="200"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+	
+	
+	
+	
+	
+</materials>

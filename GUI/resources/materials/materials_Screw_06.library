@@ -1,0 +1,26 @@
+<materials version="1.0" namespace="propellerhead">
+	<phong id="Screw_06" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file="Screw_06_sp.tga"/>
+		<normalMap file=""/>
+		<diffuse rgb="255 255 255"/>
+		<diffuseMap file="Screw_06_df.tga"/>
+		<specular rgb="80 80 80"/> 
+		<specularMap file="Screw_06_sp.tga"/>
+		<shininess value="4"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+	
+	
+</materials>

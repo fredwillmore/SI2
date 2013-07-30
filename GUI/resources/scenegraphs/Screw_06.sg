@@ -1,0 +1,9 @@
+<scenegraph version="1.0">
+	<materialNode id="Screw_06_mat">
+		<material name="propellerhead.Screw_06"/>
+		<geometryNode id="Screw_06_geom">
+			<shadows caster="true" receiver="true"/>
+			<collada file="Screw_06.dae" geometry="Screw_06"/>
+		</geometryNode>
+	</materialNode>
+</scenegraph>

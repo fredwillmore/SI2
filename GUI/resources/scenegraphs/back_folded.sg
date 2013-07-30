@@ -1,0 +1,27 @@
+<scenegraph version="1.0">
+	<translationNode id="root">
+		<translation distance="0 0 0"/>
+
+		<!-- Panel -->
+		
+		<scenegraphNode id="Panel">
+			<scenegraph file="Panel_Back_Folded.sg"/>
+		</scenegraphNode>
+
+		<!-- Device name tape strip -->
+		
+		<translationNode id="Device_Name">
+			<translation distance="150 0 0.1"/>
+			<scenegraphNode id="Device_Name">
+				<scenegraph file="Tape_Horizontal.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+		<!-- Hole for cables -->
+		
+		<scenegraphNode id="Cable_Origin">
+			<scenegraph file="Cable_Origin.sg"/>
+		</scenegraphNode>
+		
+	</translationNode>
+</scenegraph>

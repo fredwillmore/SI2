@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>magnus.ihrefors</author>
+      <authoring_tool>OpenCOLLADA2011 x64</authoring_tool>
+      <comments>
+			ColladaMaya export options: 
+			bakeTransforms=0;relativePaths=0;copyTextures=0;exportTriangles=1;exportCgfxFileReferences=1;
+			isSampling=0;curveConstrainSampling=0;removeStaticCurves=1;exportPolygonMeshes=1;exportLights=1;
+			exportCameras=1;exportJointsAndSkin=1;exportAnimations=1;exportInvisibleNodes=0;exportDefaultCameras=0;
+			exportTexCoords=1;exportNormals=1;exportNormalsPerVertex=1;exportVertexColors=0;exportVertexColorsPerVertex=0;
+			exportTexTangents=1;exportTangents=0;exportReferencedMaterials=0;exportMaterialsOnly=0;
+			exportXRefs=1;dereferenceXRefs=1;exportCameraAsLookat=0;cameraXFov=0;cameraYFov=1;doublePrecision=0
+		</comments>
+      <source_data>file:///C:/Maya_2011_Projects/3dAssets/scenes/All_Art_86.mb</source_data>
+    </contributor>
+    <created>2012-04-25T15:29:51</created>
+    <modified>2012-04-25T15:29:51</modified>
+    <unit name="millimeter" meter="0.001"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="phong110" name="phong110">
+      <instance_effect url="#phong110-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="phong110-fx">
+      <profile_COMMON>
+        <newparam sid="file157-surface">
+          <surface type="2D">
+            <init_from>file157</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="file157-sampler">
+          <sampler2D>
+            <source>file157-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file157-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode>NONE</blend_mode>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <fast>0</fast>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <rotateFrame>0</rotateFrame>
+                    <rotateUV>0</rotateUV>
+                    <stagger>0</stagger>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float>20</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="file157" name="file157">
+      <init_from>file:///C:/Users/magnus.ihrefors/Desktop/Button_Ref/Assets/Decorations/Tape_02/psd/Tape_02_df.psd</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+          <originalMayaNodeId>file157</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_geometries>
+    <geometry id="Tape_Horizontal_LODShape0" name="Tape_Horizontal_LODShape0">
+      <mesh>
+        <source id="Tape_Horizontal_LODShape0-positions" name="Tape_Horizontal_LODShape0-positions">
+          <float_array id="Tape_Horizontal_LODShape0-positions-array" count="12">25.59999 4.200001 0 -25.59999 4.2 0 25.59999 -4.200001 0 -25.59999 -4.2 0</float_array>
+          <technique_common>
+            <accessor source="#Tape_Horizontal_LODShape0-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Tape_Horizontal_LODShape0-normals" name="Tape_Horizontal_LODShape0-normals">
+          <float_array id="Tape_Horizontal_LODShape0-normals-array" count="12">0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Tape_Horizontal_LODShape0-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Tape_Horizontal_LODShape0-map1" name="Tape_Horizontal_LODShape0-map1">
+          <float_array id="Tape_Horizontal_LODShape0-map1-array" count="8">0.7887429 0.06354636 0.7887429 0.9632167 0.1960332 0.06354636 0.1960332 0.9632167</float_array>
+          <technique_common>
+            <accessor source="#Tape_Horizontal_LODShape0-map1-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Tape_Horizontal_LODShape0-textangents">
+          <float_array id="Tape_Horizontal_LODShape0-textangents-array" count="12">0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Tape_Horizontal_LODShape0-textangents-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Tape_Horizontal_LODShape0-texbinormals">
+          <float_array id="Tape_Horizontal_LODShape0-texbinormals-array" count="12">-1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#Tape_Horizontal_LODShape0-texbinormals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Tape_Horizontal_LODShape0-vertices" name="Tape_Horizontal_LODShape0-vertices">
+          <input semantic="POSITION" source="#Tape_Horizontal_LODShape0-positions"/>
+          <input semantic="NORMAL" source="#Tape_Horizontal_LODShape0-normals"/>
+        </vertices>
+        <triangles material="phong110SG" count="2">
+          <input semantic="VERTEX" source="#Tape_Horizontal_LODShape0-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#Tape_Horizontal_LODShape0-map1" offset="1" set="0"/>
+          <input semantic="TEXTANGENT" source="#Tape_Horizontal_LODShape0-textangents" offset="2" set="0"/>
+          <input semantic="TEXBINORMAL" source="#Tape_Horizontal_LODShape0-texbinormals" offset="2" set="0"/>
+          <p>3 3 0 2 2 1 1 1 3 1 1 3 2 2 1 0 0 2</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>Tape_Horizontal_LODShape0</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="All_Art_86">
+      <node id="Tape_Horizontal_LOD0" name="Tape_Horizontal_LOD0" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#Tape_Horizontal_LODShape0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="phong110SG" target="#phong110">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>Tape_Horizontal_LOD0</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

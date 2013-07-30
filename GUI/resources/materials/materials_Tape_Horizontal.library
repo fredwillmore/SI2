@@ -1,0 +1,28 @@
+<materials version="1.0" namespace="propellerhead">
+
+	<phong id="Tape_Horizontal" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file="Tape_Horizontal_alpha.tga"/>
+		<reflectionMask file=""/>
+		<normalMap file="Tape_Horizontal_nm.tga"/>
+		<diffuse rgb="240 240 240"/>
+		<diffuseMap file="Tape_Horizontal_df.tga"/>
+		<specular rgb="5 5 5"/> 
+		<specularMap file=""/>
+		<shininess value="2"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+		
+	</phong>
+	
+	
+</materials>

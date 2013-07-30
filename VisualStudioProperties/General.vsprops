@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="General"
+	OutputDirectory="$(ProjectDir)Output\$(JBox_CompilerName)\$(PlatformName)\$(JBox_ConfigurationType)"
+	IntermediateDirectory="$(ProjectDir)Intermediate\$(JBox_CompilerName)\$(PlatformName)\$(JBox_ConfigurationType)"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="$(JBox_JukeboxSDKDir)\API"
+		ExceptionHandling="2"
+		BufferSecurityCheck="false"
+		FloatingPointModel="2"
+		WarningLevel="3"
+		DebugInformationFormat="3"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalOptions="/EXPORT:JukeboxExport_InitializeDLL &#x0D;&#x0A;/EXPORT:JukeboxExport_CreateNativeObject&#x0D;&#x0A;/EXPORT:JukeboxExport_RenderRealtime &#x0D;&#x0A;"
+		AdditionalDependencies="RackExtWrapperLib.lib"
+		AdditionalLibraryDirectories="$(JBox_JukeboxSDKDir)\Tools\Libs\RackExtensionWrapper\$(PlatformName)\$(JBox_ConfigurationType)"
+		GenerateDebugInformation="true"
+	/>
+</VisualStudioPropertySheet>

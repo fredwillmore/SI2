@@ -1,0 +1,60 @@
+<materials version="1.0" namespace="propellerhead">
+
+
+   <phong id="Panel_Back_Folded_part_01" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file="Panel_Back_part_01_nm.tga"/>
+		<diffuse rgb="255 255 255"/>
+		<diffuseMap file="Panel_Back_part_01_df.tga"/>
+		<specular rgb="50 50 50"/> 
+		<specularMap file=""/>
+		<shininess value="120"/>
+		<shininessMap file="Panel_Back_part_01_df.tga"/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+
+
+	<phong id="Panel_Back_Folded_part_02" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file="Panel_Back_1U_part_02_nm.tga"/>
+		<diffuse rgb="255 255 255"/>
+		<diffuseMap file="Panel_Back_1U_part_02_df.tga"/>
+		<specular rgb="50 50 50"/> 
+		<specularMap file=""/>
+		<shininess value="120"/>
+		<shininessMap file="Panel_Back_1U_part_02_df.tga"/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+
+	
+	
+
+</materials>

@@ -1,0 +1,31 @@
+<scenegraph version="1.0">
+	<materialNode id="Display_09_part_02_mat">
+		<material name="propellerhead.Display_09_part_02"/>
+
+		<geometryNode id="Display_09_part_02_geom">
+			<shadows caster="false" receiver="false"/>
+			<collada file="Display_09.dae" geometry="Display_09_part_02"/>
+		</geometryNode>
+
+		<animationNode id="Display_09_part_01_anim">
+			<frames count="4"/>
+			<materialKeys target="Display_09_part_01_mat">
+				<key frame="1" value="propellerhead.Display_09_part_01_a"/>
+				<key frame="2" value="propellerhead.Display_09_part_01_b"/>
+				<key frame="3" value="propellerhead.Display_09_part_01_c"/>
+				<key frame="4" value="propellerhead.Display_09_part_01_d"/>
+			</materialKeys>
+			<materialNode id="Display_09_part_01_mat">
+				<material name="propellerhead.Display_09_part_01_a"/>
+				<decalNode id="Display_09_part_01_decal">
+					<drawOrder order="afterOpaque"/>
+					<layer value="0"/>
+					<geometryNode id="Display_09_part_01_geom">
+						<shadows caster="true" receiver="true"/>
+						<collada file="Display_09.dae" geometry="Display_09_part_01"/>
+					</geometryNode>
+				</decalNode>
+			</materialNode>
+		</animationNode>
+	</materialNode>
+</scenegraph>

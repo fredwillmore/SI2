@@ -1,0 +1,45 @@
+<scenegraph version="1.0">
+	<translationNode id="Lamp_05">
+		<translation distance="0 0 0"/>
+		<materialNode id="Lamp_05_part_02">
+			<material name="propellerhead.Lamp_05_part_02"/>
+			<geometryNode id="Lamp_05_part_02_geom">
+				<shadows caster="false" receiver="false"/>
+				<collada file="Lamp_05.dae" geometry="Lamp_05_part_02"/>
+			</geometryNode>
+		</materialNode>
+		
+		<animationNode id="Lamp05_anim">
+			<frames count="2"/>
+			<materialKeys target="lightmaterial">
+				<key frame="1" value="propellerhead.Lamp_05_part_01_dark"/>
+				<key frame="2" value="propellerhead.Lamp_05_part_01_lit"/>
+			</materialKeys>
+			<visibilityKeys target="lightvisibility">
+				<key frame="1" value="false"/>
+				<key frame="2" value="true"/>
+			</visibilityKeys>
+
+			<materialNode id="lightmaterial">
+				<material name="propellerhead.Lamp_05_part_01_dark"/>
+				<geometryNode id="lightmaterial_geom">
+					<shadows caster="false" receiver="false"/>
+					<collada file="Lamp_05.dae" geometry="Lamp_05_part_01"/>
+				</geometryNode>
+			</materialNode>
+
+			<translationNode id="lighttrans">
+				<translation distance="0 0 1"/>
+				<visibilityNode id="lightvisibility">
+					<visible status="false"/>
+					<lightNode id="lightnode">
+						<attenuation exponent="5.5"/>
+						<color rgb="255 0 0"/>
+						<intensity value="10000.0"/>
+						<cutoff lightDistance="5.0" translucencyDistance="5.0"/>
+					</lightNode>
+				</visibilityNode>
+			</translationNode>
+		</animationNode>
+	</translationNode>
+</scenegraph>

@@ -1,0 +1,239 @@
+<scenegraph version="1.0">
+	<translationNode id="root">
+		<translation distance="0 0 0"/>
+
+		<!-- Panel -->
+		
+		<scenegraphNode id="Panel">
+			<scenegraph file="Panel_Front_2U.sg"/>
+		</scenegraphNode>
+
+	
+		<translationNode id="Knob_Frequency">
+			<translation distance="-15 -20 0"/>
+			<scenegraphNode id="Knob_Frequency">
+				<scenegraph file="Knob_16.sg"/>
+			</scenegraphNode>
+		</translationNode>
+    
+        <!-- Volume knob and fader -->
+        <!-- changing this to filter frequency -->
+
+		<translationNode id="Knob_Filter_Frequency">
+			<translation distance="173 -3 0"/>
+			<scenegraphNode id="Knob_Filter_Frequency">
+				<scenegraph file="Knob_16.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+    <translationNode id="Fader_Volume">
+      <translation distance="210 -3 0"/>
+      <animationNode id="Fader_Volume_Handle">
+        <frames count="32"/>
+        <translationKeys target="translation">
+          <key frame="1" value="0 -13 0"/>
+          <key frame="32" value="0 13 0"/>
+        </translationKeys>
+        <translationNode id="translation">
+          <translation distance="0 -13 0"/>
+          <rotationNode id="Fader_Volume_Hole">
+            <axis direction="0 0 1"/>
+            <angle degrees="90"/>
+            <pivot point="0 0 0"/>
+            <scenegraphNode id="Fader_Volume_Handle">
+              <scenegraph file="Fader_01.sg"/>
+            </scenegraphNode>
+          </rotationNode>
+        </translationNode>
+      </animationNode>
+      <scenegraphNode id="Fader_Volume_Hole">
+        <scenegraph file="Hole_02.sg"/>
+      </scenegraphNode>
+    </translationNode>
+		
+		<!-- Button for playing sample -->
+		
+		<translationNode id="Button_SamplePlay">
+			<translation distance="100 -16 0"/>
+			<scenegraphNode id="Button_SamplePlay">
+				<scenegraph file="Button_21.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+		<!-- Value displays -->
+		
+		<translationNode id="Display_Frequency">
+			<translation distance="30 -20 0"/>
+			<scenegraphNode id="Display_Frequency">
+				<scenegraph file="Display_07.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+		<!-- Pitch and mod wheels -->
+		
+		<translationNode id="Wheel_Pitch">
+			<translation distance="-170 0 -13"/>
+			<scenegraphNode id="Wheel_Pitch">
+				<scenegraph file="Mod_Wheel_01.sg"/>
+			</scenegraphNode>
+		</translationNode>
+	
+		<translationNode id="Wheel_Mod">
+			<translation distance="-140 0 -13"/>
+			<scenegraphNode id="Wheel_Mod">
+				<scenegraph file="Mod_Wheel_01.sg"/>
+			</scenegraphNode>
+		</translationNode>
+		
+		<!-- Note on lamp -->
+		
+		<translationNode id="Lamp_NoteOn">
+			<translation distance="-197 19 0"/>
+			<scenegraphNode id="Lamp_NoteOn">
+				<scenegraph file="Lamp_05.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+		<!-- Patch display -->
+		
+		<translationNode id="Display_Patch">
+			<translation distance="-30 25 0"/>
+			<scenegraphNode id="Display_Patch">
+				<scenegraph file="Display_04.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+		<!-- Patch browser button group -->
+		
+		<translationNode id="Patch_Browser_Group">
+			<translation distance="62 25 0"/>
+			<scenegraphNode id="Patch_Browser_Group">
+				<scenegraph file="Patch_Browse_Group.sg"/>
+			</scenegraphNode>
+		</translationNode>
+
+		<!-- Device name tape strip -->
+		
+		<translationNode id="Device_Name">
+			<translation distance="-220 -5 0"/>
+			<scenegraphNode id="Device_Name">
+				<scenegraph file="Tape_Vertical.sg"/>
+			</scenegraphNode>
+		</translationNode>
+		
+		
+	
+	<translationNode id="Display_Waveform">
+		<translation distance="-85 -20 0"/>
+		<scenegraphNode id="Display_Waveform">
+			<scenegraph file="Display_09.sg"/>
+		</scenegraphNode>
+	</translationNode>
+	
+	
+	<translationNode id="Display_Waveform_UpDown_Button">
+		<translation distance="-70.5 -20 0"/>
+		<animationNode id="Display_Waveform_UpDown_Button">
+			<frames count="3"/>
+			<translationKeys target="Up">
+				<key frame="1" value="0 3.5 0"/>
+				<key frame="2" value="0 3.5 -1"/>				
+				<key frame="3" value="0 3.5 0"/>				
+			</translationKeys>
+			<translationKeys target="Down">
+				<key frame="1" value="0 -3.8 0"/>
+				<key frame="2" value="0 -3.8 0"/>				
+				<key frame="3" value="0 -3.8 -1"/>				
+			</translationKeys>
+			<materialKeys target="Up_material">
+				<key frame="1" value="propellerhead.Button_27"/>
+				<key frame="2" value="propellerhead.Button_27_dark"/>
+				<key frame="3" value="propellerhead.Button_27"/>				
+			</materialKeys>
+			<materialKeys target="Down_material">
+				<key frame="1" value="propellerhead.Button_27"/>
+				<key frame="2" value="propellerhead.Button_27"/>				
+				<key frame="3" value="propellerhead.Button_27_dark"/>
+			</materialKeys>
+			
+			<translationNode id="Up">
+				<translation distance="0 3.5 0"/>
+				<rotationNode id="90deg">
+					<axis direction="0 0 1"/>
+					<angle degrees="180"/>
+					<pivot point="0 0 0"/>
+
+					<materialNode id="Up_material">
+						<material name="propellerhead.Button_27"/>
+						<geometryNode id="Button_27_geom">
+							<shadows caster="true" receiver="true"/>
+							<collada file="Button_27.dae" geometry="Button_27"/>
+						</geometryNode>
+					</materialNode>
+				</rotationNode>
+			</translationNode>
+		
+			<translationNode id="Down">
+				<translation distance="0 -3.8 0"/>
+				<materialNode id="Down_material">
+					<material name="propellerhead.Button_27"/>
+					<geometryNode id="Button_27_geom">
+						<shadows caster="true" receiver="true"/>
+						<collada file="Button_27.dae" geometry="Button_27"/>
+					</geometryNode>
+				</materialNode>
+			</translationNode>
+		</animationNode>
+	</translationNode>
+    
+    <!-- Screws -->
+    <translationNode id="Screw_06_01">
+      <translation distance="-231 25 0"/>
+      <rotationNode id="Screw_06_rot">
+        <axis direction="0 0 1"/>
+        <angle degrees="0"/>
+        <pivot point="0 0 0"/>
+        <scenegraphNode id="Screw_06">
+          <scenegraph file="Screw_06.sg"/>
+        </scenegraphNode>
+      </rotationNode>
+    </translationNode>
+
+    <translationNode id="Screw_06_02">
+      <translation distance="-231 -37 0"/>
+      <rotationNode id="Screw_06_rot">
+        <axis direction="0 0 1"/>
+        <angle degrees="100"/>
+        <pivot point="0 0 0"/>
+        <scenegraphNode id="Screw_06">
+          <scenegraph file="Screw_06.sg"/>
+        </scenegraphNode>
+      </rotationNode>
+    </translationNode>
+    
+    <translationNode id="Screw_06_03">
+      <translation distance="231 37 0"/>
+      <rotationNode id="Screw_06_rot">
+        <axis direction="0 0 1"/>
+        <angle degrees="80"/>
+        <pivot point="0 0 0"/>
+        <scenegraphNode id="Screw_06">
+          <scenegraph file="Screw_06.sg"/>
+        </scenegraphNode>
+      </rotationNode>
+    </translationNode>
+
+    <translationNode id="Screw_06_04">
+      <translation distance="231 -37 0"/>
+      <rotationNode id="Screw_06_rot">
+        <axis direction="0 0 1"/>
+        <angle degrees="30"/>
+        <pivot point="0 0 0"/>
+        <scenegraphNode id="Screw_06">
+          <scenegraph file="Screw_06.sg"/>
+        </scenegraphNode>
+      </rotationNode>
+    </translationNode>
+		
+	</translationNode>
+</scenegraph>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<JukeboxPatch version="1.0" >
+    <DeviceNameInEnglish>
+        Simple Instrument
+    </DeviceNameInEnglish>
+    <Properties deviceProductID="com.aztronaut.SI2"  deviceVersion="1.0.0d1" >
+        <Object name="custom_properties" >
+            <Value property="volume"  type="number" >
+                0.7
+            </Value>
+            <Value property="frequency"  type="number" >
+                0
+            </Value>
+            <Value property="sampleplay"  type="boolean" >
+                true
+            </Value>
+            <Value property="waveform"  type="number" >
+                1
+            </Value>
+        </Object>
+    </Properties>
+</JukeboxPatch>

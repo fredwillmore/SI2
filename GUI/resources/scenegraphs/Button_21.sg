@@ -1,0 +1,53 @@
+<scenegraph version="1.0">
+		
+	<animationNode id="Button_21">
+		<frames count="2"/>
+		<visibilityKeys target="visibility_light">
+			<key frame="1" value="false"/>
+			<key frame="2" value="true"/>
+		</visibilityKeys>
+		<visibilityKeys target="visibility_dark">
+			<key frame="1" value="true"/>
+			<key frame="2" value="false"/>
+		</visibilityKeys>
+		<materialKeys target="material">
+			<key frame="1" value="propellerhead.Button_21_dark"/>
+			<key frame="2" value="propellerhead.Button_21_lit"/>
+		</materialKeys>
+			
+		<translationNode id="translation">
+			<translation distance="0 0 0"/>
+	
+			<visibilityNode id="visibility_light">
+				<visible status="false"/>
+				<lightNode id="Button_21_light">
+					<color rgb="255 0 0"/>
+					<intensity value="900.0"/>
+					<attenuation exponent="1.0"/>
+					<cutoff lightDistance="0.0" translucencyDistance="6.0"/>
+				</lightNode>
+			</visibilityNode>
+
+			<!-- This light node is used to give the dark button a tiny bit of glow inside -->
+			<visibilityNode id="visibility_dark">
+				<visible status="true"/>
+				<lightNode id="Button_21_dark">
+					<color rgb="255 0 0"/>
+					<intensity value="30.0"/>
+					<attenuation exponent="1.0"/>
+					<cutoff lightDistance="0.0" translucencyDistance="6.0"/>
+				</lightNode>
+			</visibilityNode>
+
+			<materialNode id="material">
+				<material name="propellerhead.Button_21_dark"/>
+				<geometryNode id="Button_21_geom">
+					<shadows caster="true" receiver="true"/>
+					<collada file="Button_21.dae" geometry="Button_21"/>
+				</geometryNode>
+			</materialNode>
+
+		</translationNode>
+		
+	</animationNode>
+</scenegraph>

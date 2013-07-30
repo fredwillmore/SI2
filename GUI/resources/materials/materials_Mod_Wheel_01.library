@@ -1,0 +1,26 @@
+<materials version="1.0" namespace="propellerhead">
+
+	<phong id="Mod_Wheel_01" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file=""/>
+		<diffuse rgb="180 180 180"/>
+		<diffuseMap file="Mod_Wheel_01_df.tga"/>
+		<specular rgb="60 60 60"/> 
+		<specularMap file=""/>
+		<shininess value="225"/>
+		<shininessMap file="Mod_Wheel_01_sp.tga"/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+	
+</materials>

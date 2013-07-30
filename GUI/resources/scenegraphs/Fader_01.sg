@@ -1,0 +1,9 @@
+<scenegraph version="1.0">
+			<materialNode id="Fader_01_mat">
+				<material name="propellerhead.Fader_01"/>
+				<geometryNode id="Fader_01_geom">
+					<shadows caster="true" receiver="true"/>
+					<collada file="Fader_01.dae" geometry="Fader_01"/>
+				</geometryNode>
+			</materialNode>
+</scenegraph>

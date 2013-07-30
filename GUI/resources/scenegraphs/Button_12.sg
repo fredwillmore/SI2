@@ -1,0 +1,9 @@
+<scenegraph version="1.0">
+			<materialNode id="Button_12_mat">
+				<material name="propellerhead.Button_12"/>
+				<geometryNode id="Button_12_geom">
+					<shadows caster="true" receiver="true"/>
+					<collada file="Button_12.dae" geometry="Button_12"/>
+				</geometryNode>
+			</materialNode>
+</scenegraph>

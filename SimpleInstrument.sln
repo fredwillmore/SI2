@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleInstrument", "SimpleInstrument.vcproj", "{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		LLVMDebugging|Win32 = LLVMDebugging|Win32
+		LLVMDebugging|x64 = LLVMDebugging|x64
+		LLVMDeployment|Win32 = LLVMDeployment|Win32
+		LLVMDeployment|x64 = LLVMDeployment|x64
+		LLVMTesting|Win32 = LLVMTesting|Win32
+		LLVMTesting|x64 = LLVMTesting|x64
+		Universal45|Win32 = Universal45|Win32
+		Universal45|x64 = Universal45|x64
+		VisualDebugging|Win32 = VisualDebugging|Win32
+		VisualDebugging|x64 = VisualDebugging|x64
+		VisualDeployment|Win32 = VisualDeployment|Win32
+		VisualDeployment|x64 = VisualDeployment|x64
+		VisualTesting|Win32 = VisualTesting|Win32
+		VisualTesting|x64 = VisualTesting|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMDebugging|Win32.ActiveCfg = LLVMDebugging|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMDebugging|Win32.Build.0 = LLVMDebugging|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMDebugging|x64.ActiveCfg = LLVMDebugging|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMDebugging|x64.Build.0 = LLVMDebugging|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMDeployment|Win32.ActiveCfg = LLVMDeployment|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMDeployment|Win32.Build.0 = LLVMDeployment|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMDeployment|x64.ActiveCfg = LLVMDeployment|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMDeployment|x64.Build.0 = LLVMDeployment|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMTesting|Win32.ActiveCfg = LLVMTesting|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMTesting|Win32.Build.0 = LLVMTesting|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMTesting|x64.ActiveCfg = LLVMTesting|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.LLVMTesting|x64.Build.0 = LLVMTesting|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.Universal45|Win32.ActiveCfg = Universal45|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.Universal45|Win32.Build.0 = Universal45|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.Universal45|x64.ActiveCfg = Universal45|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.Universal45|x64.Build.0 = Universal45|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualDebugging|Win32.ActiveCfg = VisualDebugging|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualDebugging|Win32.Build.0 = VisualDebugging|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualDebugging|x64.ActiveCfg = VisualDebugging|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualDebugging|x64.Build.0 = VisualDebugging|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualDeployment|Win32.ActiveCfg = VisualDeployment|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualDeployment|x64.ActiveCfg = VisualDeployment|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualDeployment|x64.Build.0 = VisualDeployment|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualTesting|Win32.ActiveCfg = VisualTesting|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualTesting|Win32.Build.0 = VisualTesting|Win32
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualTesting|x64.ActiveCfg = VisualTesting|x64
+		{AA4FA7D1-4E9D-4E16-8372-CEA3A79DC9D7}.VisualTesting|x64.Build.0 = VisualTesting|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

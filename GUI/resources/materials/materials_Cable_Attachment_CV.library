@@ -1,0 +1,28 @@
+<materials version="1.0" namespace="propellerhead">
+	<phong id="Cable_Attachment_CV" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file="Cable_Attachment_Audio_ref.tga"/>
+		<normalMap file="Cable_Attachment_Audio_nm.tga"/>
+		<diffuse rgb="255 255 255"/>
+		<diffuseMap file="Cable_Attachment_Audio_df.tga"/>
+		<specular rgb="255 255 200"/> 
+		<specularMap file="Cable_Attachment_Audio_sp.tga"/>
+		<shininess value="40"/>
+		<shininessMap file="Cable_Attachment_Audio_sh.tga"/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="0 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="0.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+	
+	
+	
+	
+</materials>

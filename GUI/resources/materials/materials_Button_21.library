@@ -1,0 +1,48 @@
+<materials version="1.0" namespace="propellerhead">
+	
+	<phong id="Button_21_dark" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file=""/>
+		<diffuse rgb="50 0 0"/>
+		<diffuseMap file=""/>
+		<specular rgb="95 65 65"/> 
+		<specularMap file=""/>
+		<shininess value="255"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="255 50 50"/>
+		<translucencyMap file=""/>
+		<absorption value="1.0"/>
+		<refractionMap file=""/>
+		<refraction rgb="0 0 0"/>
+		<refractionIndex value="0.0"/>
+		<refractionIntensity value="0.0"/>
+	</phong>
+
+	<phong id="Button_21_lit" template="" lod="0">
+		<opacity value="255"/>
+		<opacityMap file=""/>
+		<reflectionMask file=""/>
+		<normalMap file=""/>
+		<diffuse rgb="0 0 0"/>
+		<diffuseMap file=""/>
+		<specular rgb="25 5 5"/> 
+		<specularMap file=""/>
+		<shininess value="255"/>
+		<shininessMap file=""/>
+		<emission rgb="0 0 0"/>
+		<emissionMap file=""/>
+		<emissionIntensity value="0.0"/>
+		<translucency rgb="255 0 0"/>
+		<translucencyMap file=""/>
+		<absorption value="1.0"/>
+		<refractionMap file="Button_21_rf.tga"/>		<!-- This refraction map is used to get a bit of yellow glow in the center of the button -->
+		<refraction rgb="255 50 0"/>
+		<refractionIndex value="0.1"/>
+		<refractionIntensity value="21.0"/>
+	</phong>
+</materials>
